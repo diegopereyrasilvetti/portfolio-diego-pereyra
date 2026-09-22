@@ -14,9 +14,22 @@
     
     <style>
         body{
-            background: rgb(143, 144, 170);
+            background: rgb(80, 118, 190);
         }
-        h1, h2, h3{color: rgb(110, 16, 16);}
+        h1, h2, h3{
+            color: rgb(0, 0, 0);
+        }
+        h1{
+            border-width: 3px;
+            border-style: solid;
+        }
+        a{
+            color: rgb(31, 12, 199);
+        }
+        form{
+            color: rgb(255, 255, 255);
+        }
+
     </style>
 
 
@@ -27,7 +40,7 @@
         <h1>Portfolio Diego Pereyra</h1>
         <nav>
             <a href="#sobre-mi">Sobre Mi</a>
-            <a href="#cualidades">Cualidades</a>
+            <a href="#cualidades">Cualidades</a> 
         
 
         </nav>
@@ -71,13 +84,13 @@
                 <div>
                     <label>
                        Nombre:
-                        <input type="text" id="name" name="name" placeholder="Nicolas Pereyra" required>
+                        <input type="text" id="name" name="name" required>
                     </label>
                 </div>
                 <div>
                     <label>
                         Mail:
-                        <input type="email" id="email" name="email" placeholder="nicolaspereyra@gmail.com" required>
+                        <input type="email" id="email" name="email" required>
                     </label>
                 </div>
                 
@@ -87,7 +100,7 @@
                 <div>
                     <label>
                         Telefono:
-                        <input type="tel" name="phone" placeholder="011-48859473" pattern="[0-9]+">
+                        <input type="tel" name="phone" pattern="[0-9]+">
                     </label>
                 </div>
             </fieldset>
@@ -119,6 +132,8 @@
         </form>
 
     </main>
+    <br>
+
     <footer>
         <a href="mailto:diegopereyrasilvetti@gmail.com">Enviar Mail</a>
         <br/>
