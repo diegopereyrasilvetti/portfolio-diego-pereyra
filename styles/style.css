@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(77, 117, 192);
+    
+}
+
+header {
+    background-color: rgb(23, 105, 182);
+}
+
+h1, h2, h3 {
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    border-width: 0px;
+    border-style: solid;
+    font-family: "Noto Sans", sans-serif;
+}
+
+a {
+    color: rgb(31, 12, 199);
+}
+
+form {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color:rgb(253, 253, 253);
+}
