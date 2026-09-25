@@ -28,10 +28,18 @@ h1 {
 nav {
     padding-bottom: 10px;
 }
+
 .about-me {
     display: flex;
     flex-direction: column;
 }
+
+img {
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 10px;
+}
+
 a {
     color: rgb(31, 12, 199);
 }
@@ -68,18 +76,20 @@ form {
 fieldset {
     padding-left: 5px;
     margin: 5px;
-    height: 180px;
+    display: flex;
+    flex-direction: column;
 }
 textarea, input {
     width: 240px;
+    margin-bottom: 05px;
 }
 .field-form {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: column;
-
 }
+
 button {
     cursor: pointer;
 } 
