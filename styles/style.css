@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background: rgb(77, 117, 192);
     font-family: "Noto Sans", sans-serif;
@@ -12,18 +13,13 @@ header {
     background-color: rgb(23, 105, 182);
 }
 
-h1, h2, h3 {
-    color: rgb(0, 0, 0);    
-}
-
 h1 {
     border-width: 0px;
     border-style: solid;
 }
 
-p {
-    padding-left: 5px;
-    margin: 5px;
+nav {
+    padding-bottom: 10px;
 }
 
 a {
@@ -33,13 +29,19 @@ a {
 a:hover {
     color:rgb(253, 253, 253);
 }
-#sobre-mi, #cualidades {
+
+h2 {
     padding-left: 5px;
     margin: 5px;
 }
 
-#sobre-mi:hover, #cualidades:hover {
+h2:hover {
     color: aliceblue;
+}
+
+p {
+    padding-left: 5px;
+    margin: 5px;
 }
 
 ul {
@@ -56,4 +58,8 @@ form {
 fieldset {
     padding-left: 5px;
     margin: 5px;
+}
+
+button {
+    cursor: pointer;
 }
