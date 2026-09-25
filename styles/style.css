@@ -18,15 +18,20 @@ body {
 
 header {
     background-color: rgb(23, 105, 182);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     border-width: 0px;
     border-style: solid;
+    margin-left: 15px;
 }
 
 nav {
     padding-bottom: 10px;
+    margin-right: 15px;
 }
 
 .about-me {
@@ -82,6 +87,18 @@ fieldset {
 textarea, input {
     width: 240px;
     margin-bottom: 05px;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+}
+
+textarea{
+    height: 50px;
+    resize: none;
+    border-radius: 15px;
+    padding: 8px;
+    
 }
 .field-form {
     display: flex;
@@ -92,4 +109,16 @@ textarea, input {
 
 button {
     cursor: pointer;
+    display: flex;
+    margin-left: 5px;
+    width: 150px;
+    height: 30px;
+    justify-content:center;
+    align-items: center;
+    border-radius: 20px;
+} 
+footer {
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
 } 
