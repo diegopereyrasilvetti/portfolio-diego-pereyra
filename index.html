@@ -6,10 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Diego Pereyra</title>
-    
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#09f">
-    
     <meta name="description" content="Portfolio Diego Pereyra">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,22 +27,21 @@
 
     </header>
     <main>
-        <section>
+        <section class="about-me">
             <img src="images/fotoperfil.jpeg"
             width="100" 
             alt="foto perfil" 
             title="foto de perfil diego pereyra">
             
+            <div>
+                <h2 id="sobre-mi">Sobre mi</h2>
 
-            <h2 id="sobre-mi">Sobre mi</h2>
-
-            <p>Soy Diego Pereyra, una persona responsable, comprometida y con experiencia en áreas de depósito, producción y control de procesos.</p>
-
-            <p>Cuento con conocimientos de herramientas informáticas, diseño asistido por computadora, manejo de herramientas de medición y maquinaria. También me caracterizo por mi capacidad de aprendizaje, adaptación y trabajo en equipo.</p>
-
-            <p>Actualmente soy estudiante de programación, con interés en desarrollarme en el área tecnológica y seguir incorporando nuevos conocimientos.</p>
-
-            <p>Mi objetivo es combinar mi experiencia laboral con mis nuevas habilidades para crecer profesionalmente y aportar soluciones en cada proyecto.</p>
+                <p>Soy Diego Pereyra, una persona responsable, comprometida y con experiencia en áreas de depósito, producción y control de procesos.</p>
+                <p>Cuento con conocimientos de herramientas informáticas, diseño asistido por computadora, manejo de herramientas de medición y maquinaria. También me caracterizo por mi capacidad de aprendizaje, adaptación y trabajo en equipo.</p>
+                <p>Actualmente soy estudiante de programación, con interés en desarrollarme en el área tecnológica y seguir incorporando nuevos conocimientos.</p>
+                <p>Mi objetivo es combinar mi experiencia laboral con mis nuevas habilidades para crecer profesionalmente y aportar soluciones en cada proyecto.</p>
+            </div>    
+            
         </section>
 
         <section>
@@ -69,43 +66,24 @@
             <form method="post" action="/">
                 <fieldset>
                     <legend>Informacion personal</legend>
-                    <div>
+                    <div class="field-form">
                         <label>
                         Nombre:
-                            <input type="text" id="name" name="name" required>
                         </label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div>
+                    <div class="field-form">
                         <label>
                             Mail:
-                            <input type="email" id="email" name="email" required>
                         </label>
+                        <input type="email" id="email" name="email" required>
                     </div> 
-                    <div>
-                        <label>
-                            Telefono:
-                            <input type="tel" name="phone" pattern="[0-9]+">
+                    <div class="field-form">
+                        <label for="">
+                            Mensaje:
                         </label>
-                    </div>
-                    <div>
-                        <label for="why">Por que quieres contactar?</label>
-                        <select name="why" id="why">
-                            <option value="1">Trabajo</option>
-                            <option value="2">Duda</option>
-                            <option value="3">Mas informacion</option>
-                        </select>
-                    </div>
-                    <div>
-                        <datalist id="languages">
-                            <option value="JavaScript"></option>
-                            <option value="Python"></option>
-                            <option value="Java"></option>
-                            <option value="C#"></option>
-                        </datalist>
-                        <label>
-                            Con que lenguaje quieres que te ayude?
-                            <input list="languages" name="languages">
-                        </label>
+                        <textarea name="message" id="message"></textarea>
+                        
                     </div>
                 </fieldset>
 
