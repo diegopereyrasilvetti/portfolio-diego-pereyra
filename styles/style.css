@@ -25,27 +25,74 @@ body {
 }
 
 header {
+    position: relative;
     border-bottom: 1px solid rgba(120, 150, 255, 0.12);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 20px;
-}
-h1 {
-    font-size: 24px;
-    text-align: center;
+    height: 70px;
+    padding: 0 20px;
 }
 
 nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.label-menu {
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.label-menu:hover {
+    opacity: 1;
+}
+
+.ul-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: #050608;
+    transition: max-height 0.4s;
+}
+
+.li-menu {
+    list-style: none;
+}
+
+.li-menu:first-child {
+    margin-top: 25px;
+}
+
+.li-menu:last-child {
+    margin-bottom: 25px;
+}
+
+#menu:checked + .ul-menu {
+    max-height: 400px;
+    border-bottom: 1px solid rgba(120, 150, 255, 0.12);
 }
 
 nav a {
-    width: 40%;
-    text-align: center;
+    font-size: 22px;
     white-space: nowrap;
 }
 
@@ -237,21 +284,14 @@ footer {
         min-height: 100vh;
     }
     header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 5%;
+        padding: 0 5%;
     }
-
-    nav {
-        gap: 20px;
-    }
-    nav a, footer a {
+    footer a {
         font-size: 17px;
         margin-right: 0;
     }
     nav a {
-        width: auto;
+        margin-right: 0;
     }
     a {
         font-size: 24px;
@@ -293,26 +333,38 @@ footer {
     textarea {
         height: 80px;
         margin-bottom: 25px;
+    }   
+}
+@media screen and (min-width:920px) {
+    .label-menu {
+        display: none;
+    }
+    .ul-menu {
+        position: static;
+        width: auto;
+        max-height: none;
+        flex-direction: row;
+        gap: 20px;
+        overflow: visible;
+        background: none;
+    }
+    .li-menu:first-child {
+        margin-top: 0;
+    }
+    .li-menu:last-child {
+        margin-bottom: 0;
+    }
+    nav a {
+        font-size: 17px;
     }
 }
+
 @media screen  and (min-width:992px) {
     body {
         background-image:
             radial-gradient(ellipse 50% 100% at 50% 0%, rgba(40, 70, 200, 0.4), transparent 70%),
             radial-gradient(ellipse 50% 100% at 50% 100%, rgba(40, 70, 200, 0.3), transparent 70%);
         background-size: 100% 450px;
-    }
-    header {
-        padding: 20px 10%;
-    }
-    nav {
-        gap: 30px;
-    }
-    nav a, footer a {
-        font-size: 20px;
-    }
-    h1 {
-        font-size: 30px;
     }
     img {
         margin-bottom: 60px;
@@ -330,3 +382,17 @@ footer {
     }
 }
     
+@media screen and (min-width:1280px) {
+    header {
+        padding: 0 10%;
+    }
+    .ul-menu {
+        gap: 30px;
+    }
+    nav a, footer a {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
