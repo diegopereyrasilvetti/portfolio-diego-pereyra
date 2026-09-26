@@ -79,6 +79,30 @@ ul {
     padding-left: 15px;
     margin: 15px;
 }
+.tech div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.tech img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 0;
+    margin: 0;
+}
+
+.tech img[alt="github"] {
+    filter: invert(1);
+    transform: translateY(10%) scale(0.83);
+}
+.tech img:hover {
+    transform:scale(1.5);
+}
 
 form {
     color: rgb(255, 255, 255);
@@ -181,6 +205,13 @@ footer {
     img {
         width: 180px;
     }
+    .tech div {
+        gap: 60px;
+    }
+    .tech img {
+        width: 130px;
+        height: 130px;
+    }
 
     section {
         margin: 100px;
@@ -213,6 +244,20 @@ footer {
             radial-gradient(ellipse 50% 100% at 50% 0%, rgba(40, 70, 200, 0.4), transparent 70%),
             radial-gradient(ellipse 50% 100% at 50% 100%, rgba(40, 70, 200, 0.3), transparent 70%);
         background-size: 100% 450px;
+    }
+    img {
+        margin-bottom: 60px;
+    }
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    .about-me div p {
+        margin-left: 20px;
+    }
+    h2 {
+        text-align: center;
     }
 }
     
