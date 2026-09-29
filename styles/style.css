@@ -183,6 +183,11 @@ ul {
     filter: invert(1);
     transform: translateY(10%) scale(0.83);
 }
+
+.tech img[alt="Tailwindcss"] {
+    transform: translateY(10%) scale(1.15);
+}
+
 .tech img:hover {
     transform:scale(1.5);
 }
@@ -367,8 +372,19 @@ footer {
     textarea {
         height: 80px;
         margin-bottom: 25px;
-    }   
+    }
 }
+
+@media screen and (min-width: 600px) and (max-width: 919px) {
+    .tech div {
+        gap: 30px;
+    }
+    .tech img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 @media screen and (min-width:920px) {
     .label-menu {
         display: none;
