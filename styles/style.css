@@ -188,6 +188,10 @@ ul {
     transform: translateY(10%) scale(1.15);
 }
 
+.tech img[alt="JavaScript"] {
+    transform: translateY(8%) scale(0.95);
+}
+
 .tech img:hover {
     transform:scale(1.5);
 }
