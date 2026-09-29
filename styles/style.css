@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #050608;
+
     background-image:
         radial-gradient(ellipse 70% 100% at 50% 0%, rgba(40, 70, 200, 0.45), transparent 70%),
         radial-gradient(ellipse 70% 100% at 50% 100%, rgba(40, 70, 200, 0.35), transparent 70%);
@@ -25,21 +25,8 @@ body {
 }
 
 header {
-    position: relative;
-    border-bottom: 1px solid rgba(120, 150, 255, 0.12);
     height: 70px;
     padding: 0 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-h1 {
-    font-size: 20px;
 }
 
 #menu {
