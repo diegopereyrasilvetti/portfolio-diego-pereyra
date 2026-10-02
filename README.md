@@ -10,6 +10,7 @@ El objetivo de este proyecto es poner en práctica los conocimientos que voy adq
 - CSS3
 - Git
 - GitHub
+- Tailwind
 
 ## Características
 
