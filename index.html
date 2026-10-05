@@ -115,30 +115,29 @@
 
         <section>
             <h2 id="contacto" class="font-bold">Contacto</h2>
-            <form method="post" action="/">
+            <form method="post" action="https://formspree.io/f/mnpjnazn">
                 <fieldset>
                     <div class="field-form">
-                        <label>
+                        <label for="name">
                         Nombre:
                         </label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="field-form">
-                        <label>
+                        <label for="email">
                             Mail:
                         </label>
                         <input type="email" id="email" name="email" required>
-                    </div> 
+                    </div>
                     <div class="field-form">
-                        <label for="">
+                        <label for="message">
                             Mensaje:
                         </label>
-                        <textarea name="message" id="message"></textarea>
-                        
+                        <textarea name="message" id="message" required></textarea>
                     </div>
                 </fieldset>
 
-                <button disabled type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </section>
 
