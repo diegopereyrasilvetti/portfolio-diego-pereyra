@@ -220,6 +220,17 @@ ul {
     background-color: rgba(40, 70, 200, 0.25);
 }
 
+.cv-download {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.cv-btn {
+    flex: none;
+    width: 200px;
+}
+
 .btn:hover {
     background-color: rgba(40, 70, 200, 0.45);
 }
@@ -491,6 +502,9 @@ footer {
     .brand {
         margin-right: 20px;
     }
+    .ul-menu {
+        margin-left: auto;
+    }
     .label-menu {
         display: none;
     }
@@ -551,3 +565,4 @@ footer {
         font-size: 22px;
     }
 }
+
