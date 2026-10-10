@@ -220,6 +220,26 @@ ul {
     background-color: rgba(40, 70, 200, 0.25);
 }
 
+.contact-mail {
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.contact-mail a {
+    margin-right: 0;
+    font-size: inherit;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.contact-mail a:hover {
+    opacity: 1;
+}
+
+.contact-mail i {
+    margin-right: 10px;
+}
+
 .cv-download {
     display: flex;
     justify-content: center;
