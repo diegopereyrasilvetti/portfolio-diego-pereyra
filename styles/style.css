@@ -240,6 +240,36 @@ ul {
     margin-right: 10px;
 }
 
+.thanks {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.thanks > .fa-circle-check {
+    font-size: 56px;
+    color: rgb(90, 120, 240);
+}
+
+.thanks h1 {
+    font-size: 28px;
+}
+
+.thanks p {
+    padding-left: 0;
+}
+
+.thanks .btn {
+    flex: none;
+    width: 220px;
+    margin-top: 10px;
+}
+
 .cv-download {
     display: flex;
     justify-content: center;
