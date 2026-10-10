@@ -31,7 +31,7 @@
             <ul class="ul-menu">
                 <li class="li-menu"><a href="#sobre-mi">Sobre mí</a></li>
                 <li class="li-menu"><a href="#proyectos">Proyectos</a></li>
-                <li class="li-menu"><a href="#cualidades">Cualidades</a></li>
+                <li class="li-menu"><a href="#certificaciones">Certificaciones</a></li>
                 <li class="li-menu"><a href="#tecnologias">Tecnologías</a></li>
                 <li class="li-menu"><a href="#herramientas">Herramientas</a></li>
                 <li class="li-menu"><a href="#contacto">Contacto</a></li>
@@ -85,16 +85,53 @@
                 </article>
             </div>
         </section>
-
         <section>
-            <h2 id="cualidades" class="font-bold">Cualidades</h2>
-
-            <ul class="cualidades">
-                <li><strong>Autodidacta:</strong> aprendo con cursos y documentación, y lo llevo a la práctica: este portfolio, un e-commerce y un sitio web para un hotel.</li>
-                <li><strong>Detallista:</strong> en control de procesos aprendí a revisar el trabajo antes de darlo por terminado.</li>
-                <li><strong>Resolutivo:</strong> cuando algo no funciona, lo investigo hasta entender por qué.</li>
-            </ul>
+            <h2 id="certificaciones" class="font-bold">Certificaciones</h2>
+            <div class="certs">
+                <button type="button" class="cert-card" data-img="cursos/html%20avanzado.png" data-title="HTML avanzado">
+                    <i class="fa-brands fa-html5"></i>
+                    <span class="cert-name">HTML avanzado</span>
+                    <span class="cert-meta">LinkedIn Learning</span>
+                    <span class="cert-open">Ver certificado</span>
+                </button>
+                <button type="button" class="cert-card" data-img="cursos/css%20avanzado.png" data-title="CSS avanzado">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span class="cert-name">CSS avanzado</span>
+                    <span class="cert-meta">LinkedIn Learning</span>
+                    <span class="cert-open">Ver certificado</span>
+                </button>
+                <button type="button" class="cert-card" data-img="cursos/javascript.png" data-title="JavaScript esencial">
+                    <i class="fa-brands fa-js"></i>
+                    <span class="cert-name">JavaScript esencial</span>
+                    <span class="cert-meta">LinkedIn Learning</span>
+                    <span class="cert-open">Ver certificado</span>
+                </button>
+                <button type="button" class="cert-card" data-img="cursos/github%20.png" data-title="GitHub para desarrolladores">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="cert-name">GitHub para desarrolladores</span>
+                    <span class="cert-meta">LinkedIn Learning</span>
+                    <span class="cert-open">Ver certificado</span>
+                </button>
+                <button type="button" class="cert-card" data-img="cursos/visual%20studio%20code.png" data-title="Visual Studio Code 2022 esencial">
+                    <i class="fa-solid fa-code"></i>
+                    <span class="cert-name">Visual Studio Code 2022 esencial</span>
+                    <span class="cert-meta">LinkedIn Learning</span>
+                    <span class="cert-open">Ver certificado</span>
+                </button>
+            </div>
         </section>
+
+        <dialog class="cert-modal" id="cert-modal" aria-labelledby="cert-modal-title">
+            <div class="cert-modal-header">
+                <h3 id="cert-modal-title"></h3>
+                <a class="cert-modal-link" id="cert-modal-link" href="#" target="_blank" rel="noreferrer" title="Abrir en una pestaña nueva"><i class="fa-solid fa-arrow-up-right-from-square"></i>Abrir</a>
+                <button type="button" class="cert-modal-close" id="cert-modal-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cert-modal-body">
+                <img id="cert-modal-img" alt="">
+            </div>
+        </dialog>
+
             
         
 
@@ -157,6 +194,35 @@
         <a href="https://github.com/diegopereyrasilvetti" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
         
     </footer>
+
+    <script>
+        const modal = document.getElementById("cert-modal");
+        const img = document.getElementById("cert-modal-img");
+        const title = document.getElementById("cert-modal-title");
+        const link = document.getElementById("cert-modal-link");
+
+        document.querySelectorAll(".cert-card").forEach(function (card) {
+            card.addEventListener("click", function () {
+                title.textContent = card.dataset.title;
+                link.href = card.dataset.img;
+                img.src = card.dataset.img;
+                img.alt = "Certificado de " + card.dataset.title;
+                modal.showModal();
+            });
+        });
+
+        document.getElementById("cert-modal-close").addEventListener("click", function () {
+            modal.close();
+        });
+
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+        });
+
+        modal.addEventListener("close", function () {
+            img.removeAttribute("src");
+        });
+    </script>
 </body>
 
 </html>
