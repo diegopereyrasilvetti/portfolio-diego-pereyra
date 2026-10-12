@@ -1,25 +1,6 @@
 # Portfolio personal - Diego Pereyra
 
-Mi primer proyecto de desarrollo web, creado como parte de mi formación como desarrollador web.
-
-El objetivo de este proyecto es poner en práctica los conocimientos que voy adquiriendo y mostrar mi progreso a medida que continúo aprendiendo.
-
-## Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- Git
-- GitHub
-- Tailwind
-
-## Características
-
-- Estructura HTML semántica
-- Diseño responsive
-- Navegación entre secciones
-- Sección sobre mí
-- Sección de tecnologías
-- Formulario de contacto
+Mi portfolio como desarrollador web junior. Es mi primer proyecto de desarrollo web, creado como parte de mi formación, y lo voy actualizando a medida que avanzo y sumo nuevos proyectos.
 
 ## Ver proyecto
 
@@ -27,8 +8,54 @@ El portfolio se encuentra publicado mediante GitHub Pages:
 
 https://diegopereyrasilvetti.github.io/portfolio-diego-pereyra/
 
+## Secciones
+
+- **Sobre mí:** quién soy, qué busco y mi recorrido, con botón para descargar mi CV.
+- **Proyectos:** mis proyectos con su demo, su código en GitHub y las tecnologías usadas.
+- **Certificaciones:** cursos de LinkedIn Learning completados. Al hacer clic en cada uno se abre una ventana modal con el certificado.
+- **Tecnologías:** HTML, CSS, JavaScript, Tailwind CSS y Git.
+- **Herramientas:** GitHub, Visual Studio Code, Vercel y Jira.
+- **Contacto:** mail directo y formulario de contacto.
+
+## Proyectos
+
+Son proyectos personales que estoy desarrollando.
+
+| Proyecto | Descripción | Tecnologías | Demo | Código |
+|---|---|---|---|---|
+| E-commerce | Tienda online de componentes y periféricos para PC. | HTML, CSS, Tailwind CSS | [Ver](https://ecommerce-chi-hazel.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/E-commerce) |
+| Sitio web de hotel | Sitio de un hotel en Bariloche con las habitaciones en ventanas modales y mapa de ubicación. | HTML, Tailwind CSS, JavaScript | [Ver](https://hotelwebsite-vert.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/Hotel-Website) |
+| Gestión de stock | Sitio para controlar el stock de un emprendimiento. | HTML, CSS, Tailwind CSS, JavaScript | [Ver](https://inventory-management-sigma-henna.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/inventory-management) |
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (ventana modal de certificados)
+- Tailwind CSS (cargado desde CDN)
+- Git y GitHub
+- Formspree (envío del formulario de contacto)
+- Font Awesome y Google Fonts
+
+## Características
+
+- Estructura HTML semántica
+- Diseño responsive, probado desde 320 px de ancho
+- Navegación entre secciones con menú de hamburguesa en pantallas chicas
+- Descarga de CV
+- Certificados visibles en una ventana modal
+- Formulario de contacto funcional, sin backend propio
+
+## Estructura del proyecto
+
+```
+index.html              Página principal
+styles/style.css        Estilos propios
+images/                 Logos, fotos y capturas de los proyectos
+cursos/                 Imágenes de los certificados
+CV_Diego_Pereyra.pdf    CV descargable
+```
+
 ## Sobre mí
 
-Actualmente me estoy formando en desarrollo web. Comencé trabajando con HTML y CSS y utilizando Git y GitHub para el control de versiones de mis proyectos.
-
-Actualmente estoy aprendiendo JavaScript y continuaré incorporando nuevas tecnologías y proyectos a medida que avance en mi formación.
+Soy desarrollador web junior y autodidacta. Aprendo con cursos en YouTube y LinkedIn Learning, y actualmente trabajo con HTML, CSS, JavaScript, Tailwind y Git. Vengo de trabajar en depósito, producción y control de procesos, y busco mi primera experiencia profesional como desarrollador.
