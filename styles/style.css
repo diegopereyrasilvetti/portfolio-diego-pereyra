@@ -238,6 +238,13 @@ ul {
     opacity: 0.8;
 }
 
+.tech-band {
+    padding: 30px 0;
+    background: linear-gradient(180deg, rgba(60, 95, 225, 0.30), rgba(60, 95, 225, 0.14));
+    border-top: 1px solid rgba(120, 150, 255, 0.12);
+    border-bottom: 1px solid rgba(120, 150, 255, 0.12);
+}
+
 .tech div {
     display: flex;
     flex-wrap: wrap;
@@ -264,8 +271,13 @@ ul {
     transform: translateY(10%) scale(1.15);
 }
 
+.tech img[alt="HTML5"],
+.tech img[alt="CSS3"] {
+    transform: translateY(9.5%) scale(0.8);
+}
+
 .tech img[alt="JavaScript"] {
-    transform: translateY(8%) scale(0.95);
+    transform: translateY(8%) scale(0.9);
 }
 
 .tech img[alt="Git"] {
@@ -299,6 +311,10 @@ ul {
     filter: invert(1);
     transform: scale(0.83);
 }
+.tools img[alt="Vercel"] {
+    transform: scale(1.12);
+}
+
 .tools img:hover {
     transform:scale(1.5);
 }
