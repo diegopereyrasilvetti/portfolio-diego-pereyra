@@ -31,7 +31,7 @@ Son proyectos personales que estoy desarrollando.
 
 - HTML5
 - CSS3
-- JavaScript (ventana modal de certificados)
+- JavaScript (menú hamburguesa y ventana modal de certificados)
 - Tailwind CSS (cargado desde CDN)
 - Git y GitHub
 - Formspree (envío del formulario de contacto)
@@ -51,6 +51,7 @@ Son proyectos personales que estoy desarrollando.
 ```
 index.html              Página principal
 styles/style.css        Estilos propios
+js/main.js              Menú hamburguesa y modal de certificados
 images/                 Logos, fotos y capturas de los proyectos
 cursos/                 Imágenes de los certificados
 CV_Diego_Pereyra.pdf    CV descargable

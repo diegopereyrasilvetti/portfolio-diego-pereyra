@@ -26,9 +26,8 @@
                 <h1 class="text-[20px] font-bold">Portfolio Diego Pereyra</h1>
                 <p class="subtitle">desarrollador web junior. HTML, CSS, JavaScript</p>
             </div>
-            <label class="label-menu text-2xl cursor-pointer opacity-80" for="menu"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" name="menu" id="menu">
-            <ul class="ul-menu">
+            <button type="button" class="label-menu text-2xl cursor-pointer opacity-80" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-list"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i></button>
+            <ul class="ul-menu" id="menu-list">
                 <li class="li-menu"><a href="#sobre-mi">Sobre mí</a></li>
                 <li class="li-menu"><a href="#proyectos">Proyectos</a></li>
                 <li class="li-menu"><a href="#certificaciones">Certificaciones</a></li>
@@ -211,34 +210,7 @@
         
     </footer>
 
-    <script>
-        const modal = document.getElementById("cert-modal");
-        const img = document.getElementById("cert-modal-img");
-        const title = document.getElementById("cert-modal-title");
-        const link = document.getElementById("cert-modal-link");
-
-        document.querySelectorAll(".cert-card").forEach(function (card) {
-            card.addEventListener("click", function () {
-                title.textContent = card.dataset.title;
-                link.href = card.dataset.img;
-                img.src = card.dataset.img;
-                img.alt = "Certificado de " + card.dataset.title;
-                modal.showModal();
-            });
-        });
-
-        document.getElementById("cert-modal-close").addEventListener("click", function () {
-            modal.close();
-        });
-
-        modal.addEventListener("click", function (e) {
-            if (e.target === modal) modal.close();
-        });
-
-        modal.addEventListener("close", function () {
-            img.removeAttribute("src");
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

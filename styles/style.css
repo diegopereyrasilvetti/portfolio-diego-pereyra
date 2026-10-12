@@ -50,30 +50,56 @@ a {
     }
 }
 
-#menu {
-    display: none;
+.label-menu {
+    position: relative;
+    z-index: 20;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
 }
 
 .label-menu:hover {
     opacity: 1;
+    background: none;
+}
+
+.label-menu .fa-xmark {
+    display: none;
+}
+
+.label-menu[aria-expanded="true"] .fa-bars {
+    display: none;
+}
+
+.label-menu[aria-expanded="true"] .fa-xmark {
+    display: inline-block;
 }
 
 .ul-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 10;
     width: 100%;
-    max-height: 0;
+    height: 100vh;
+    height: 100dvh;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 0 32px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 25px;
-    background-color: #050608;
-    transition: max-height 0.4s;
+    background-color: rgba(5, 6, 8, 0.96);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.4s, visibility 0s 0.4s;
 }
 
 .li-menu {
@@ -88,9 +114,19 @@ a {
     margin-bottom: 25px;
 }
 
-#menu:checked + .ul-menu {
-    max-height: 400px;
-    border-bottom: 1px solid rgba(120, 150, 255, 0.12);
+@media screen and (max-width: 1099px) {
+    html.menu-open {
+        overflow: hidden;
+        scrollbar-gutter: stable;
+    }
+    .ul-menu.open {
+        transform: translateX(0);
+        visibility: visible;
+        transition-delay: 0s;
+    }
+    .ul-menu a {
+        font-size: 24px;
+    }
 }
 
 nav a {
@@ -502,11 +538,16 @@ footer {
     .ul-menu {
         position: static;
         width: auto;
-        max-height: none;
+        height: auto;
+        padding: 0;
         flex-direction: row;
+        justify-content: flex-start;
         gap: 20px;
         overflow: visible;
         background: none;
+        transform: none;
+        visibility: visible;
+        transition: none;
     }
     .li-menu:first-child {
         margin-top: 0;
