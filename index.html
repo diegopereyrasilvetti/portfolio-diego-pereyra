@@ -20,10 +20,10 @@
 </head>
 
 <body class="bg-[#050608] min-h-screen font-['Noto_Sans'] leading-[1.7]">
-    <header class="relative border-b border-[rgba(120,150,255,0.12)]" >
+    <header class="relative border-b border-[rgba(120,150,255,0.12)] h-[70px] px-5 min-[600px]:px-[5%] min-[1280px]:px-[10%]">
         <nav class="flex justify-between items-center h-full">
-            <div class="brand">
-                <h1 class="text-[20px] font-bold">Portfolio Diego Pereyra</h1>
+            <div class="brand whitespace-nowrap min-[1100px]:mr-5">
+                <h1 class="text-[20px] font-bold leading-[1.3] max-[359.01px]:text-[18px] min-[600px]:text-[24px] min-[1280px]:text-[22px]">Portfolio Diego Pereyra</h1>
                 <p class="subtitle">desarrollador web junior. HTML, CSS, JavaScript</p>
             </div>
             <button type="button" class="label-menu text-2xl cursor-pointer opacity-80" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-list"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i></button>
@@ -39,13 +39,13 @@
 
     </header>
     <main>
-        <section class="about-me flex flex-col">
-            <img src="images/picture.png"
+        <section class="about-me flex flex-col min-[992px]:justify-between min-[600px]:m-[100px]">
+            <img class="rounded-[50%] self-center mt-2.5 min-[600px]:w-[180px] min-[992px]:mb-[60px]" src="images/picture.png"
             width="100"
             alt="Foto de Diego Pereyra"
             title="foto de perfil diego pereyra">
             
-            <div>
+            <div class="max-w-[1000px] mx-auto">
                 <h2 id="sobre-mi" class="font-bold">Sobre mí</h2>
 
                 <p>Soy Diego Pereyra, desarrollador web junior y autodidacta. Busco mi primera experiencia profesional en desarrollo web, en un equipo donde pueda seguir aprendiendo y aportar desde el primer día.</p>
@@ -57,15 +57,15 @@
         <div class="flex justify-center my-5">
             <a class="btn cv-btn" href="CV_Diego_Pereyra_IT_v3_foto.pdf" download title="Descargar CV"><i class="fa-solid fa-download"></i>Descargar CV</a>
         </div>
-        <section>
+        <section class="min-[600px]:m-[100px]">
             <h2 id="proyectos" class="font-bold">Proyectos</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(260px,340px))] justify-center gap-6 my-5">
                 <article class="project-card flex flex-col gap-3.5 p-5 bg-[rgba(255,255,255,0.03)] border border-[rgba(120,150,255,0.12)] rounded-2xl">
                     <div class="flex flex-col gap-2.5 flex-1">
-                        <img src="images/ecommerce-portada.png" alt="Captura de la página de inicio del E-commerce Kodex">
-                        <h3>E-commerce</h3>
+                        <img class="w-full aspect-video object-cover rounded-[10px]" src="images/ecommerce-portada.png" alt="Captura de la página de inicio del E-commerce Kodex">
+                        <h3 class="text-[24px] font-extrabold text-[rgb(140,168,255)]">E-commerce</h3>
                         <p>Tienda online de componentes y periféricos para PC.</p>
-                        <ul class="project-tags"><li>HTML</li><li>CSS</li><li>Tailwind CSS</li></ul>
+                        <ul class="flex flex-wrap gap-1.5 list-none mt-auto"><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">HTML</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">Tailwind CSS</li></ul>
                     </div>
                     <div class="flex gap-2.5">
                         <a class="btn" href="https://ecommerce-chi-hazel.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
@@ -74,10 +74,10 @@
                 </article>
                 <article class="project-card flex flex-col gap-3.5 p-5 bg-[rgba(255,255,255,0.03)] border border-[rgba(120,150,255,0.12)] rounded-2xl">
                     <div class="flex flex-col gap-2.5 flex-1">
-                        <img src="./images/hotel para card 2.png" alt="Captura de la página de inicio del sitio web del Hotel Bariloche">
-                        <h3>Sitio web de hotel</h3>
+                        <img class="w-full aspect-video object-cover rounded-[10px]" src="./images/hotel para card 2.png" alt="Captura de la página de inicio del sitio web del Hotel Bariloche">
+                        <h3 class="text-[24px] font-extrabold text-[rgb(140,168,255)]">Sitio web de hotel</h3>
                         <p>Sitio de un hotel en Bariloche con las habitaciones en ventanas modales y mapa de ubicación.</p>
-                        <ul class="project-tags"><li>HTML</li><li>Tailwind CSS</li><li>JavaScript</li></ul>
+                        <ul class="flex flex-wrap gap-1.5 list-none mt-auto"><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">HTML</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">Tailwind CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">JavaScript</li></ul>
                     </div>
                     <div class="flex gap-2.5">
                         <a class="btn" href="https://hotelwebsite-vert.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
@@ -86,10 +86,10 @@
                 </article>
                 <article class="project-card flex flex-col gap-3.5 p-5 bg-[rgba(255,255,255,0.03)] border border-[rgba(120,150,255,0.12)] rounded-2xl">
                     <div class="flex flex-col gap-2.5 flex-1">
-                        <img src="images/gestion-para-card.png" alt="Captura de la página de inicio de Gestion, sitio para controlar el stock">
-                        <h3>Gestión de stock</h3>
+                        <img class="w-full aspect-video object-cover rounded-[10px]" src="images/gestion-para-card.png" alt="Captura de la página de inicio de Gestion, sitio para controlar el stock">
+                        <h3 class="text-[24px] font-extrabold text-[rgb(140,168,255)]">Gestión de stock</h3>
                         <p>Sitio para controlar el stock de un emprendimiento.</p>
-                        <ul class="project-tags"><li>HTML</li><li>CSS</li><li>Tailwind CSS</li><li>JavaScript</li></ul>
+                        <ul class="flex flex-wrap gap-1.5 list-none mt-auto"><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">HTML</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">Tailwind CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">JavaScript</li></ul>
                     </div>
                     <div class="flex gap-2.5">
                         <a class="btn" href="https://inventory-management-sigma-henna.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
@@ -98,66 +98,66 @@
                 </article>
             </div>
         </section>
-        <section>
+        <section class="min-[600px]:m-[100px]">
             <h2 id="certificaciones" class="font-bold">Certificaciones</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(240px,300px))] justify-center gap-5 my-5 max-[599.01px]:grid-cols-[repeat(2,minmax(0,1fr))] max-[599.01px]:gap-3 max-[599.01px]:mx-2.5">
                 <button type="button" class="cert-card" data-img="cursos/html%20avanzado.png" data-title="HTML avanzado">
-                    <i class="fa-brands fa-html5"></i>
-                    <span class="cert-name">HTML avanzado</span>
-                    <span class="cert-meta">LinkedIn Learning</span>
-                    <span class="cert-open">Ver certificado</span>
+                    <i class="fa-brands fa-html5 text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
+                    <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">HTML avanzado</span>
+                    <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
+                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/css%20avanzado.png" data-title="CSS avanzado">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span class="cert-name">CSS avanzado</span>
-                    <span class="cert-meta">LinkedIn Learning</span>
-                    <span class="cert-open">Ver certificado</span>
+                    <i class="fa-brands fa-css3-alt text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
+                    <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">CSS avanzado</span>
+                    <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
+                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/javascript.png" data-title="JavaScript esencial">
-                    <i class="fa-brands fa-js"></i>
-                    <span class="cert-name">JavaScript esencial</span>
-                    <span class="cert-meta">LinkedIn Learning</span>
-                    <span class="cert-open">Ver certificado</span>
+                    <i class="fa-brands fa-js text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
+                    <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">JavaScript esencial</span>
+                    <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
+                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/react.png" data-title="Domina React">
-                    <i class="fa-brands fa-react"></i>
-                    <span class="cert-name">Domina React</span>
-                    <span class="cert-meta">LinkedIn Learning</span>
-                    <span class="cert-open">Ver certificado</span>
+                    <i class="fa-brands fa-react text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
+                    <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">Domina React</span>
+                    <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
+                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/github%20.png" data-title="GitHub para desarrolladores">
-                    <i class="fa-brands fa-github"></i>
-                    <span class="cert-name">GitHub para desarrolladores</span>
-                    <span class="cert-meta">LinkedIn Learning</span>
-                    <span class="cert-open">Ver certificado</span>
+                    <i class="fa-brands fa-github text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
+                    <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">GitHub para desarrolladores</span>
+                    <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
+                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/visual%20studio%20code.png" data-title="Visual Studio Code 2022 esencial">
-                    <i class="fa-solid fa-code"></i>
-                    <span class="cert-name">Visual Studio Code 2022 esencial</span>
-                    <span class="cert-meta">LinkedIn Learning</span>
-                    <span class="cert-open">Ver certificado</span>
+                    <i class="fa-solid fa-code text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
+                    <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">Visual Studio Code 2022 esencial</span>
+                    <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
+                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
             </div>
         </section>
 
         <dialog class="cert-modal" id="cert-modal" aria-labelledby="cert-modal-title">
-            <div class="cert-modal-header">
-                <h3 id="cert-modal-title"></h3>
+            <div class="flex items-center gap-3 px-3.5 py-2.5 border-b border-b-[rgba(120,150,255,0.12)]">
+                <h3 id="cert-modal-title" class="flex-1 text-[18px] leading-[1.3]"></h3>
                 <a class="cert-modal-link" id="cert-modal-link" href="#" target="_blank" rel="noreferrer" title="Abrir en una pestaña nueva"><i class="fa-solid fa-arrow-up-right-from-square"></i>Abrir</a>
                 <button type="button" class="cert-modal-close" id="cert-modal-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <div class="cert-modal-body">
-                <img id="cert-modal-img" alt="">
+            <div class="flex-1 min-h-0 overflow-auto p-3.5 flex justify-center items-start">
+                <img id="cert-modal-img" class="max-w-full max-h-[calc(90vh-110px)] w-auto h-auto rounded-lg" alt="">
             </div>
         </dialog>
 
             
         
 
-        <div class="tech-band">
-        <section class="tech">
+        <div class="py-[30px] bg-[linear-gradient(180deg,rgba(60,95,225,0.30),rgba(60,95,225,0.14))] border-y border-y-[rgba(120,150,255,0.12)]">
+        <section class="tech min-[600px]:m-[100px]">
             <h2 id="tecnologias" class="font-bold">Tecnologías</h2>
-            <div>
+            <div class="flex flex-wrap min-[1100px]:flex-nowrap justify-center items-center gap-[30px] min-[920px]:gap-[60px] my-5 min-[600px]:mx-auto min-[600px]:max-w-[360px] min-[920px]:max-w-[510px] min-[1100px]:max-w-none">
                 <img src="images/HTML5_logo.png" alt="HTML5">
                 <img src="images/CSS3_logo.png" alt="CSS3">
                 <img src="./images/file_00000000d388820ead284109fc11ff55.png" alt="JavaScript">
@@ -167,9 +167,9 @@
             </div>
         </section>
 
-        <section class="tools">
+        <section class="tools min-[600px]:m-[100px]">
             <h2 id="herramientas" class="font-bold">Herramientas</h2>
-            <div>
+            <div class="flex flex-wrap justify-center items-center gap-[30px] min-[600px]:gap-[60px] my-5">
                 <img src="images/GitHub_Mark.png" alt="GitHub">
                 <img class="visual" src="./images/Visual_Studio_Code_1.35_icon.svg.webp" alt="Visual studio code">
                 <img src="./images/file_000000000b38820e8e34270ed1451069.png" alt="Jira">
@@ -179,24 +179,24 @@
         </section>
         </div>
 
-        <section>
+        <section class="min-[600px]:m-[100px]">
             <h2 id="contacto" class="font-bold">Contacto</h2>
-            <p class="contact-mail"><a href="mailto:diegopereyrasilvetti@gmail.com"><i class="fa-solid fa-envelope"></i>diegopereyrasilvetti@gmail.com</a></p>
-            <form method="post" action="https://formspree.io/f/mnpjnazn">
-                <fieldset>
-                    <div class="field-form">
+            <p class="contact-mail text-center [overflow-wrap:anywhere]"><a href="mailto:diegopereyrasilvetti@gmail.com"><i class="fa-solid fa-envelope"></i>diegopereyrasilvetti@gmail.com</a></p>
+            <form class="text-white bg-[rgba(255,255,255,0.03)] border border-[rgba(120,150,255,0.12)] rounded-2xl max-w-[700px] mx-auto my-5 p-[15px]" method="post" action="https://formspree.io/f/mnpjnazn">
+                <fieldset class="border-none pl-[5px] m-[5px] flex flex-col justify-center items-center">
+                    <div class="flex flex-col justify-between flex-nowrap">
                         <label for="name">
                         Nombre:
                         </label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="field-form">
+                    <div class="flex flex-col justify-between flex-nowrap">
                         <label for="email">
                             Mail:
                         </label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="field-form">
+                    <div class="flex flex-col justify-between flex-nowrap">
                         <label for="message">
                             Mensaje:
                         </label>
@@ -210,11 +210,11 @@
 
     </main>
 
-    <footer>
-        <a href="mailto:diegopereyrasilvetti@gmail.com"><i class="fa-solid fa-envelope"></i>Enviar Mail</a>
-        <a href="https://www.linkedin.com/in/diego-pereyra-ab3095243/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-        <a href="https://github.com/diegopereyrasilvetti" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
-        
+    <footer class="flex justify-center flex-nowrap items-center gap-[30px] max-[419.01px]:gap-[14px] border-t border-t-[rgba(120,150,255,0.12)] h-[50px]">
+        <a class="max-[349.99px]:text-[13px]" href="mailto:diegopereyrasilvetti@gmail.com"><i class="fa-solid fa-envelope"></i>Enviar Mail</a>
+        <a class="max-[349.99px]:text-[13px]" href="https://www.linkedin.com/in/diego-pereyra-ab3095243/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        <a class="max-[349.99px]:text-[13px]" href="https://github.com/diegopereyrasilvetti" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+        <a href="#top" class="flex items-center justify-center w-9 h-9 rounded-full border border-[rgba(90,120,240,0.5)] bg-[rgba(40,70,200,0.25)]" aria-label="Volver arriba" title="Volver arriba"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
 
     <script src="js/main.js"></script>

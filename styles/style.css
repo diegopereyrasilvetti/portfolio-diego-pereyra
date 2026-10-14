@@ -1,4 +1,5 @@
 
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
@@ -11,27 +12,14 @@ body {
         radial-gradient(ellipse 70% 100% at 50% 100%, rgba(40, 70, 200, 0.35), transparent 70%);
     background-size: 100% 350px;
     background-position: top, bottom;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
     color: aliceblue;
-}
-
-header {
-    height: 70px;
-    padding: 0 20px;
 }
 
 a {
     color: white
 }
 
-
-.brand {
-    white-space: nowrap;
-}
-
-.brand h1 {
-    line-height: 1.3;
-}
 
 .brand .subtitle {
     padding-left: 0;
@@ -42,9 +30,6 @@ a {
 }
 
 @media screen and (max-width: 359px) {
-    .brand h1 {
-        font-size: 18px;
-    }
     .brand .subtitle {
         font-size: 11px;
     }
@@ -154,17 +139,6 @@ footer i {
     margin-right: 8px;
 }
 
-.about-me div {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-img {
-    border-radius: 50%;
-    align-self: center;
-    margin-top: 10px;
-}
-
 a:hover {
     color:rgb(253, 253, 253);
 }
@@ -183,32 +157,8 @@ p {
     margin: 5px;
 }
 
-ul {
-    padding-left: 15px;
-    margin: 15px;
-}
-
 .project-card {
     transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    list-style: none;
-    margin: auto 0 0;
-    padding: 0;
-}
-
-.project-tags li {
-    font-size: 12px;
-    line-height: 1.4;
-    padding: 2px 8px;
-    white-space: nowrap;
-    border-radius: 12px;
-    border: 1px solid rgba(90, 120, 240, 0.4);
-    background-color: rgba(40, 70, 200, 0.15);
 }
 
 .btn {
@@ -224,11 +174,6 @@ ul {
     border-radius: 20px;
     border: 1px solid rgba(90, 120, 240, 0.5);
     background-color: rgba(40, 70, 200, 0.25);
-}
-
-.contact-mail {
-    text-align: center;
-    overflow-wrap: anywhere;
 }
 
 .contact-mail a {
@@ -261,48 +206,16 @@ ul {
     background-color: rgba(40, 70, 200, 0.12);
 }
 
-.project-card img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 0;
-}
-
-.project-card h3 {
-    font-size: 24px;
-    font-weight: 800;
-    color: rgb(140, 168, 255);
-}
-
 .project-card p {
     padding-left: 0;
     margin: 0;
     opacity: 0.8;
 }
 
-.tech-band {
-    padding: 30px 0;
-    background: linear-gradient(180deg, rgba(60, 95, 225, 0.30), rgba(60, 95, 225, 0.14));
-    border-top: 1px solid rgba(120, 150, 255, 0.12);
-    border-bottom: 1px solid rgba(120, 150, 255, 0.12);
-}
-
-.tech div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 20px 0;
-}
-
 .tech img {
     width: 90px;
     height: 90px;
     object-fit: contain;
-    border-radius: 0;
-    margin: 0;
 }
 
 .tech img[alt="GitHub"] {
@@ -337,21 +250,10 @@ ul {
     transform:scale(1.5);
 }
 
-.tools div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 20px 0;
-}
-
 .tools img {
     width: 90px;
     height: 90px;
     object-fit: contain;
-    border-radius: 0;
-    margin: 0;
 }
 
 .tools img[alt="GitHub"] {
@@ -370,30 +272,9 @@ ul {
     width: 90px;
     height: 90px;
     object-fit: contain;
-    border-radius: 0;
-    margin: 0;
     transform: scale(0.83);
 }
 
-form {
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(120, 150, 255, 0.12);
-    border-radius: 16px;
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 15px;
-}
-
-fieldset {
-    border: none;
-    padding-left: 5px;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 textarea, input {
     width: 240px;
     margin-bottom: 05px;
@@ -416,13 +297,6 @@ textarea{
     resize: none;
     border-radius: 15px;
     padding: 8px;
-    
-}
-.field-form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-direction: column;
 
 }
 
@@ -447,25 +321,10 @@ button {
 
 button:hover {
     background-color: rgba(40, 70, 200, 0.45);
-} 
-footer {
-    display: flex;
-    justify-content:center;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 30px;
-    border-top: 1px solid rgba(120, 150, 255, 0.12);
-    height: 50px;
-} 
+}
 
 
 @media screen and (min-width: 600px) {
-    body {
-        min-height: 100vh;
-    }
-    header {
-        padding: 0 5%;
-    }
     footer a {
         font-size: 17px;
         margin-right: 0;
@@ -477,20 +336,11 @@ footer {
         font-size: 24px;
         margin-right: 20px;
     }
-    img {
-        width: 180px;
-    }
-    .tech div {
-        gap: 60px;
-    }
     .tech img {
         width: 130px;
         height: 130px;
     }
 
-    .tools div {
-        gap: 60px;
-    }
     .tools img {
         width: 130px;
         height: 130px;
@@ -500,16 +350,10 @@ footer {
         height: 130px;
     }
 
-    section {
-        margin: 100px;
-    }
-    h1 {
-        font-size: 24px;
-    }
     h2 {
         font-size: 34px;
     }
-    p, li, label, legend {
+    p, .li-menu, label, legend {
         font-size: 24px;
     }
     button {
@@ -527,42 +371,17 @@ footer {
 }
 
 @media screen and (min-width: 600px) and (max-width: 919px) {
-    .tech div {
-        gap: 30px;
-    }
     .tech img {
         width: 100px;
         height: 100px;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 919px) {
-    .tech div {
-        max-width: 360px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 920px) and (max-width: 1099px) {
-    .tech div {
-        max-width: 510px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 @media screen and (min-width:1100px) {
-    .tech div {
-        flex-wrap: nowrap;
-    }
     .tech img {
         min-width: 0;
         height: auto;
         aspect-ratio: 1 / 1;
-    }
-    .brand {
-        margin-right: 20px;
     }
     .ul-menu {
         margin-left: auto;
@@ -602,14 +421,6 @@ footer {
             radial-gradient(ellipse 50% 100% at 50% 100%, rgba(40, 70, 200, 0.3), transparent 70%);
         background-size: 100% 450px;
     }
-    img {
-        margin-bottom: 60px;
-    }
-    .about-me {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;    
-    }
     .about-me div p {
         margin-left: 20px;
     }
@@ -617,19 +428,13 @@ footer {
         text-align: center;
     }
 }
-    
+
 @media screen and (min-width:1280px) {
-    header {
-        padding: 0 10%;
-    }
     .ul-menu {
         gap: 30px;
     }
     nav a, footer a {
         font-size: 20px;
-    }
-    h1 {
-        font-size: 22px;
     }
 }
 
@@ -658,27 +463,6 @@ footer {
     background-color: rgba(40, 70, 200, 0.12);
 }
 
-.cert-card > [class*="fa-"] {
-    font-size: 30px;
-    color: rgb(120, 150, 255);
-    margin-bottom: 6px;
-}
-
-.cert-name {
-    font-size: 19px;
-    font-weight: bold;
-    line-height: 1.3;
-}
-
-.cert-meta {
-    opacity: 0.7;
-}
-
-.cert-open {
-    margin-top: 8px;
-    color: rgb(120, 150, 255);
-}
-
 .cert-modal {
     width: min(900px, 94vw);
     max-height: 90vh;
@@ -698,20 +482,6 @@ footer {
 
 .cert-modal::backdrop {
     background-color: rgba(0, 0, 0, 0.75);
-}
-
-.cert-modal-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 14px;
-    border-bottom: 1px solid rgba(120, 150, 255, 0.12);
-}
-
-.cert-modal-header h3 {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.3;
 }
 
 .cert-modal-link {
@@ -739,53 +509,15 @@ footer {
     font-size: 16px;
 }
 
-.cert-modal-body {
-    flex: 1;
-    min-height: 0;
-    overflow: auto;
-    padding: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.cert-modal-body img {
-    max-width: 100%;
-    max-height: calc(90vh - 110px);
-    width: auto;
-    height: auto;
-    margin: 0;
-    border-radius: 8px;
-    align-self: auto;
-}
-
 @media screen and (max-width: 599px) {
     .cert-card {
         padding: 14px;
         gap: 4px;
-    }
-    .cert-card > [class*="fa-"] {
-        font-size: 24px;
-        margin-bottom: 2px;
-    }
-    .cert-name {
-        font-size: 16px;
-    }
-    .cert-meta {
-        font-size: 13px;
-    }
-    .cert-open {
-        margin-top: 4px;
-        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 359px) {
     .cert-card {
         padding: 12px;
-    }
-    .cert-name {
-        font-size: 15px;
-        overflow-wrap: anywhere;
     }
 }
