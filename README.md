@@ -54,7 +54,7 @@ styles/style.css        Estilos propios
 js/main.js              Menú hamburguesa y modal de certificados
 images/                 Logos, fotos y capturas de los proyectos
 cursos/                 Imágenes de los certificados
-CV_Diego_Pereyra.pdf    CV descargable
+CV_Diego_Pereyra_IT_v3_foto.pdf    CV descargable
 ```
 
 ## Sobre mí
