@@ -325,12 +325,12 @@ ul {
 
 .tech img[alt="Git"] {
     object-fit: cover;
-    scale: 0.79;
+    scale: 0.78;
     translate: 0 9.5%;
 }
 
 .tech img[alt="React"] {
-    transform: translateY(8%) scale(0.95);
+    transform: translateY(11%) scale(0.95);
 }
 
 .tech img:hover {
