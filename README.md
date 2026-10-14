@@ -59,4 +59,4 @@ CV_Diego_Pereyra_IT_v3_foto.pdf     CV descargable
 
 ## Sobre mí
 
-Soy desarrollador web junior y autodidacta. Aprendo con cursos en YouTube y LinkedIn Learning, y actualmente trabajo con HTML, CSS, JavaScript, Tailwind y Git. Vengo de trabajar en depósito, producción y control de procesos, y busco mi primera experiencia profesional como desarrollador.
+Soy desarrollador web junior y autodidacta. Aprendo con cursos en YouTube y LinkedIn Learning, y actualmente trabajo con HTML, CSS, JavaScript, Tailwind, React y Git. Vengo de trabajar en depósito, producción y control de procesos, y busco mi primera experiencia profesional como desarrollador.
