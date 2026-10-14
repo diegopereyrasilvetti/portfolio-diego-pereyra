@@ -12,9 +12,9 @@ https://diegopereyrasilvetti.github.io/portfolio-diego-pereyra/
 
 - **Sobre mí:** quién soy, qué busco y mi recorrido, con botón para descargar mi CV.
 - **Proyectos:** mis proyectos con su demo, su código en GitHub y las tecnologías usadas.
-- **Certificaciones:** cursos de LinkedIn Learning completados. Al hacer clic en cada uno se abre una ventana modal con el certificado.
-- **Tecnologías:** HTML, CSS, JavaScript, Tailwind CSS y Git.
-- **Herramientas:** GitHub, Visual Studio Code, Vercel y Jira.
+- **Certificaciones:** cursos de LinkedIn Learning completados: HTML avanzado, CSS avanzado, JavaScript esencial, Domina React, GitHub para desarrolladores y Visual Studio Code 2022 esencial. Al hacer clic en cada uno se abre una ventana modal con el certificado.
+- **Tecnologías:** HTML, CSS, JavaScript, Tailwind CSS, React y Git.
+- **Herramientas:** GitHub, Visual Studio Code, Jira y Vercel.
 - **Contacto:** mail directo y formulario de contacto.
 
 ## Proyectos
@@ -41,20 +41,20 @@ Son proyectos personales que estoy desarrollando.
 
 - Estructura HTML semántica
 - Diseño responsive, probado desde 320 px de ancho
-- Navegación entre secciones con menú de hamburguesa en pantallas chicas
+- Navegación entre secciones, con menú hamburguesa a pantalla completa en celulares y tablets
 - Descarga de CV
-- Certificados visibles en una ventana modal
+- Seis certificados visibles en una ventana modal
 - Formulario de contacto funcional, sin backend propio
 
 ## Estructura del proyecto
 
 ```
-index.html              Página principal
-styles/style.css        Estilos propios
-js/main.js              Menú hamburguesa y modal de certificados
-images/                 Logos, fotos y capturas de los proyectos
-cursos/                 Imágenes de los certificados
-CV_Diego_Pereyra_IT_v3_foto.pdf    CV descargable
+index.html                          Página principal
+styles/style.css                    Estilos propios
+js/main.js                          Menú hamburguesa y modal de certificados
+images/                             Logos, fotos y capturas de los proyectos
+cursos/                             Imágenes de los certificados
+CV_Diego_Pereyra_IT_v3_foto.pdf     CV descargable
 ```
 
 ## Sobre mí
