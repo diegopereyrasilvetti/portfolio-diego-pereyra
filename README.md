@@ -23,9 +23,9 @@ Son proyectos personales que estoy desarrollando.
 
 | Proyecto | Descripción | Tecnologías | Demo | Código |
 |---|---|---|---|---|
-| E-commerce | Tienda online de componentes y periféricos para PC. | HTML, CSS, Tailwind CSS | [Ver](https://ecommerce-chi-hazel.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/E-commerce) |
+| E-commerce | Tienda online de componentes y periféricos para PC. | HTML, CSS, Tailwind CSS, React | [Ver](https://ecommerce-chi-hazel.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/E-commerce) |
 | Sitio web de hotel | Sitio de un hotel en Bariloche con las habitaciones en ventanas modales y mapa de ubicación. | HTML, Tailwind CSS, JavaScript | [Ver](https://hotelwebsite-vert.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/Hotel-Website) |
-| Gestión de stock | Sitio para controlar el stock de un emprendimiento. | HTML, CSS, Tailwind CSS, JavaScript | [Ver](https://inventory-management-sigma-henna.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/inventory-management) |
+| Gestión de stock | Sitio para controlar el stock de un emprendimiento. | HTML, CSS, Tailwind CSS, JavaScript, React | [Ver](https://inventory-management-sigma-henna.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/inventory-management) |
 
 ## Tecnologías utilizadas
 
