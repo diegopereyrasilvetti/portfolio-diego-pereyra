@@ -10,9 +10,9 @@ https://diegopereyrasilvetti.github.io/portfolio-diego-pereyra/
 
 ## Secciones
 
-- **Sobre mí:** quién soy, qué busco y mi recorrido, con botón para descargar mi CV.
+- **Sobre mí:** quién soy, dónde trabajo hoy y mi recorrido, con botón para descargar mi CV.
 - **Proyectos:** mis proyectos con su demo, su código en GitHub y las tecnologías usadas.
-- **Certificaciones:** cursos de LinkedIn Learning completados: HTML avanzado, CSS avanzado, JavaScript esencial, Domina React, GitHub para desarrolladores y Visual Studio Code 2022 esencial. Al hacer clic en cada uno se abre una ventana modal con el certificado.
+- **Certificaciones:** cursos de LinkedIn Learning completados: HTML avanzado, CSS avanzado, JavaScript esencial, Domina React, GitHub para desarrolladores, Visual Studio Code 2022 esencial y MySQL: Instalación y configuración. Al hacer clic en cada uno se abre una ventana modal con el certificado.
 - **Tecnologías:** HTML, CSS, JavaScript, Tailwind CSS, React y Git.
 - **Herramientas:** GitHub, Visual Studio Code, Jira y Vercel.
 - **Contacto:** mail directo y formulario de contacto.
@@ -42,21 +42,22 @@ Son proyectos personales que estoy desarrollando.
 - Estructura HTML semántica
 - Diseño responsive, probado desde 320 px de ancho
 - Navegación entre secciones, con menú hamburguesa a pantalla completa en celulares y tablets
-- Descarga de CV
-- Seis certificados visibles en una ventana modal
+- Descarga de CV y botón para volver arriba en el footer
+- Favicon propio
+- Siete certificados visibles en una ventana modal
 - Formulario de contacto funcional, sin backend propio
 
 ## Estructura del proyecto
 
 ```
 index.html                          Página principal
-styles/style.css                    Estilos propios
+styles/style.css                    Estilos base (el resto del diseño usa clases de Tailwind en index.html)
 js/main.js                          Menú hamburguesa y modal de certificados
-images/                             Logos, fotos y capturas de los proyectos
+images/                             Logos, fotos, capturas de los proyectos y favicon
 cursos/                             Imágenes de los certificados
 CV_Diego_Pereyra_IT_v4_foto.pdf     CV descargable
 ```
 
 ## Sobre mí
 
-Soy desarrollador web junior y autodidacta. Aprendo con cursos en YouTube y LinkedIn Learning, y actualmente trabajo con HTML, CSS, JavaScript, Tailwind, React y Git. Vengo de trabajar en depósito, producción y control de procesos, y busco mi primera experiencia profesional como desarrollador.
+Soy desarrollador web junior y autodidacta. Aprendo con cursos en YouTube y LinkedIn Learning, y actualmente trabajo con HTML, CSS, JavaScript, Tailwind, React y Git. Vengo de trabajar en depósito, producción y control de procesos. Actualmente trabajo en un equipo de desarrollo, poniendo en práctica lo que aprendo.
