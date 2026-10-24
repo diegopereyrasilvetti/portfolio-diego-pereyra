@@ -6,14 +6,27 @@ html {
 }
 
 body {
+    color: aliceblue;
+}
 
+/* Fondo fijo: los brillos azules quedan en la ventana y acompañan el scroll */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
     background-image:
         radial-gradient(ellipse 70% 100% at 50% 0%, rgba(40, 70, 200, 0.45), transparent 70%),
-        radial-gradient(ellipse 70% 100% at 50% 100%, rgba(40, 70, 200, 0.35), transparent 70%);
-    background-size: 100% 350px;
-    background-position: top, bottom;
+        radial-gradient(ellipse 70% 100% at 50% 100%, rgba(40, 70, 200, 0.35), transparent 70%),
+        radial-gradient(circle at center, rgba(40, 70, 200, 0.16), transparent 65%),
+        radial-gradient(circle at center, rgba(60, 95, 225, 0.12), transparent 65%);
+    background-size: 100% 350px, 100% 350px, 70vw 70vw, 60vw 60vw;
+    background-position: top, bottom, left -25vw top 30%, right -20vw bottom 5%;
     background-repeat: no-repeat;
-    color: aliceblue;
 }
 
 a {
@@ -419,11 +432,13 @@ button:hover {
 }
 
 @media screen  and (min-width:992px) {
-    body {
+    body::before {
         background-image:
             radial-gradient(ellipse 50% 100% at 50% 0%, rgba(40, 70, 200, 0.4), transparent 70%),
-            radial-gradient(ellipse 50% 100% at 50% 100%, rgba(40, 70, 200, 0.3), transparent 70%);
-        background-size: 100% 450px;
+            radial-gradient(ellipse 50% 100% at 50% 100%, rgba(40, 70, 200, 0.3), transparent 70%),
+            radial-gradient(circle at center, rgba(40, 70, 200, 0.16), transparent 65%),
+            radial-gradient(circle at center, rgba(60, 95, 225, 0.12), transparent 65%);
+        background-size: 100% 450px, 100% 450px, 50vw 50vw, 45vw 45vw;
     }
     .about-me div p {
         margin-left: 20px;
