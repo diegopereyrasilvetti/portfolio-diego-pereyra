@@ -27,7 +27,7 @@
         <nav class="flex justify-between items-center h-full">
             <div class="brand whitespace-nowrap min-[1100px]:mr-5">
                 <h1 class="text-[20px] font-bold leading-[1.3] max-[359.01px]:text-[18px] min-[600px]:text-[24px] min-[1280px]:text-[22px]">Portfolio Diego Pereyra</h1>
-                <p class="subtitle">desarrollador web junior. HTML, CSS, JavaScript</p>
+                <p class="subtitle">Desarrollador web junior. React, Node.js y base de datos</p>
             </div>
             <button type="button" class="label-menu text-2xl cursor-pointer opacity-80" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-list"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i></button>
             <ul class="ul-menu" id="menu-list">
@@ -43,7 +43,7 @@
     </header>
     <main>
         <section class="about-me flex flex-col min-[992px]:justify-between min-[600px]:m-[100px]">
-            <img class="rounded-[50%] self-center mt-2.5 min-[600px]:w-[180px] min-[992px]:mb-[60px]" src="images/picture.png"
+            <img class="rounded-[50%] self-center mt-2.5 min-[600px]:w-[180px] min-[992px]:mb-[60px] aspect-[606/699] object-cover object-[50%_18%]" src="images/diegopereyra.png"
             width="100"
             alt="Foto de Diego Pereyra"
             title="foto de perfil diego pereyra">
@@ -51,8 +51,8 @@
             <div class="max-w-[1000px] mx-auto">
                 <h2 id="sobre-mi" class="font-bold">Sobre mí</h2>
 
-                <p>Soy Diego Pereyra, desarrollador web junior y autodidacta. Actualmente trabajo en un equipo de desarrollo, donde pongo en práctica lo que aprendo y sigo sumando experiencia día a día.</p>
-                <p>Trabajo con HTML, CSS, JavaScript, Tailwind, React y Git, Ahora estoy desarrollando mis primeros proyectos: un e-commerce, un sitio web para un hotel y un sitio de gestión de stock, que podés ver más abajo.</p>
+                <p>Soy Diego Pereyra, desarrollador web junior y autodidacta. Actualmente trabajo en T&amp;M Studio, en un equipo de desarrollo, donde pongo en práctica lo que aprendo y sigo sumando experiencia día a día.</p>
+                <p>Trabajo con HTML, CSS, JavaScript, Tailwind, React, Node.js, Git y bases de datos relacionales y no relacionales, Ahora estoy desarrollando mis primeros proyectos: un e-commerce, un sitio web para un hotel y un sitio de gestión de stock, que podés ver más abajo.</p>
                 <p>Vengo de trabajar en depósito, producción y control de procesos. Ahí aprendí a ser ordenado, a revisar el trabajo antes de darlo por terminado y a buscar la causa de los problemas en lugar de solo resolver el síntoma. Hoy aplico esa misma forma de pensar al código.</p>
             </div>    
             
@@ -108,49 +108,55 @@
                     <i class="fa-brands fa-html5 text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">HTML avanzado</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/css%20avanzado.png" data-title="CSS avanzado">
                     <i class="fa-brands fa-css3-alt text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">CSS avanzado</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/javascript.png" data-title="JavaScript esencial">
                     <i class="fa-brands fa-js text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">JavaScript esencial</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/react.png" data-title="Domina React">
                     <i class="fa-brands fa-react text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">Domina React</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/github%20.png" data-title="GitHub para desarrolladores">
                     <i class="fa-brands fa-github text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">GitHub para desarrolladores</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/visual%20studio%20code.png" data-title="Visual Studio Code 2022 esencial">
                     <i class="fa-solid fa-code text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">Visual Studio Code 2022 esencial</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/mysql.png" data-title="MySQL: Instalación y configuración">
                     <i class="fa-solid fa-database text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">MySQL: Instalación y configuración</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
                 <button type="button" class="cert-card" data-img="cursos/node.js.png" data-title="Node.js esencial">
                     <i class="fa-brands fa-node-js text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
                     <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">Node.js esencial</span>
                     <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
-                    <span class="mt-2 text-[rgb(120,150,255)] max-[599.01px]:mt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
+                </button>
+                <button type="button" class="cert-card" data-img="cursos/iaclaude.png" data-title="Claude: el asistente de IA para optimizar tu trabajo">
+                    <i class="fa-solid fa-robot text-[30px] text-[rgb(120,150,255)] mb-1.5 max-[599.01px]:text-[24px] max-[599.01px]:mb-0.5"></i>
+                    <span class="text-[19px] font-bold leading-[1.3] max-[599.01px]:text-[16px] max-[359.01px]:text-[15px] max-[359.01px]:[overflow-wrap:anywhere]">Claude: asistente de IA</span>
+                    <span class="opacity-70 max-[599.01px]:text-[13px]">LinkedIn Learning</span>
+                    <span class="mt-auto pt-2 text-[rgb(120,150,255)] max-[599.01px]:pt-1 max-[599.01px]:text-[14px]">Ver certificado</span>
                 </button>
             </div>
         </section>
@@ -172,12 +178,13 @@
         <div class="py-[30px] bg-[linear-gradient(180deg,rgba(60,95,225,0.30),rgba(60,95,225,0.14))] border-y border-y-[rgba(120,150,255,0.12)]">
         <section class="tech min-[600px]:m-[100px]">
             <h2 id="tecnologias" class="font-bold">Tecnologías</h2>
-            <div class="flex flex-wrap min-[1100px]:flex-nowrap justify-center items-center gap-[30px] min-[920px]:gap-[60px] my-5 min-[600px]:mx-auto min-[600px]:max-w-[360px] min-[920px]:max-w-[510px] min-[1100px]:max-w-none">
+            <div class="flex flex-wrap min-[1100px]:flex-nowrap justify-center items-center gap-[30px] min-[920px]:gap-[60px] min-[1100px]:gap-[clamp(30px,3.5vw,60px)] my-5 min-[600px]:mx-auto min-[600px]:max-w-[490px] min-[920px]:max-w-[700px] min-[1100px]:max-w-none">
                 <img src="images/HTML5_logo.png" alt="HTML5">
                 <img src="images/CSS3_logo.png" alt="CSS3">
                 <img src="./images/file_00000000d388820ead284109fc11ff55.png" alt="JavaScript">
                 <img src="./images/Tailwind CSS.png" alt="Tailwindcss">
                 <img src="./images/2582e94c-6fc1-450a-a905-1f9aa269d0f6.png" alt="React">
+                <img src="./images/logo-nodejs-hexagonal-sin-fondo.png" alt="Node.js">
                 <img src="./images/Git-Symbol.png" alt="Git">
             </div>
         </section>

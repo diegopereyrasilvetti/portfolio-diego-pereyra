@@ -232,6 +232,10 @@ p {
     transform: translateY(9.5%) scale(0.8);
 }
 
+.tech img[alt="Node.js"] {
+    transform: translateY(9.5%) scale(0.8);
+}
+
 .tech img[alt="JavaScript"] {
     transform: translateY(8%) scale(0.9);
 }
