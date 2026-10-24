@@ -8,7 +8,7 @@ html {
 /* Barra de scroll azul, a juego con la paleta del portfolio */
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgba(83, 95, 143, 0.7) #050608;
+    scrollbar-color: rgba(64, 83, 156, 0.7) #050608;
 }
 
 ::-webkit-scrollbar {
