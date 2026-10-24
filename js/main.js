@@ -9,7 +9,11 @@ document.querySelectorAll(".cert-card").forEach(function (card) {
         link.href = card.dataset.img;
         img.src = card.dataset.img;
         img.alt = "Certificado de " + card.dataset.title;
-        modal.showModal();
+        if (typeof modal.showModal === "function") {
+            modal.showModal();
+        } else {
+            window.open(card.dataset.img, "_blank");
+        }
     });
 });
 
