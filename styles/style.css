@@ -8,7 +8,7 @@ html {
 /* Barra de scroll azul, a juego con la paleta del portfolio */
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgba(60, 90, 200, 0.75) #050608;
+    scrollbar-color: rgba(83, 95, 143, 0.7) #050608;
 }
 
 ::-webkit-scrollbar {
@@ -21,13 +21,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(55, 85, 190, 0.6);
+    background: rgba(14, 23, 59, 0.55);
     border-radius: 10px;
     border: 2px solid #050608;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(80, 110, 225, 0.85);
+    background: rgba(120, 150, 255, 0.85);
 }
 
 body {
