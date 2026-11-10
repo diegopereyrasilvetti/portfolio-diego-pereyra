@@ -565,3 +565,15 @@ button:hover {
         padding: 12px;
     }
 }
+
+/* Barra de progreso de lectura (arriba de todo) */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    z-index: 50;
+    pointer-events: none;
+    background: linear-gradient(90deg, #5a78f0, #a5c0ff);
+}

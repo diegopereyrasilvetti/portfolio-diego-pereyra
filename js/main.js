@@ -60,3 +60,14 @@ document.addEventListener("keydown", function (e) {
 window.matchMedia("(min-width: 1100px)").addEventListener("change", function (e) {
     if (e.matches) setMenu(false);
 });
+
+const progressBar = document.getElementById("scroll-progress");
+
+function updateProgress() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + "%";
+}
+
+window.addEventListener("scroll", updateProgress, { passive: true });
+window.addEventListener("resize", updateProgress);
+updateProgress();

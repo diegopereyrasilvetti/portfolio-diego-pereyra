@@ -1,6 +1,6 @@
 # Portfolio personal - Diego Pereyra
 
-Mi portfolio como desarrollador web junior. Es mi primer proyecto de desarrollo web, creado como parte de mi formación, y lo voy actualizando a medida que avanzo y sumo nuevos proyectos.
+Mi portfolio como desarrollador web trainee. Es mi primer proyecto de desarrollo web, creado como parte de mi formación, y lo voy actualizando a medida que avanzo y sumo nuevos proyectos.
 
 ## Ver proyecto
 
@@ -31,7 +31,7 @@ Son proyectos personales que estoy desarrollando.
 
 - HTML5
 - CSS3
-- JavaScript (menú hamburguesa y ventana modal de certificados)
+- JavaScript (menú hamburguesa, ventana modal de certificados, barra de progreso y fondo animado en canvas)
 - Tailwind CSS (cargado desde CDN)
 - Git y GitHub
 - Formspree (envío del formulario de contacto)
@@ -43,6 +43,9 @@ Son proyectos personales que estoy desarrollando.
 - Diseño responsive, probado desde 320 px de ancho
 - Navegación entre secciones, con menú hamburguesa a pantalla completa en celulares y tablets
 - Descarga de CV y botón para volver arriba en el footer
+- Fondo animado de partículas conectadas que reaccionan al cursor (canvas, sin librerías). Se desactiva el movimiento si el sistema pide reducir animaciones y se pausa cuando la pestaña no está visible
+- Barra de progreso de lectura arriba de la página, que avanza a medida que se hace scroll
+- Foto de perfil circular
 - Favicon propio
 - Nueve certificados visibles en una ventana modal
 - Formulario de contacto funcional, sin backend propio
@@ -52,7 +55,9 @@ Son proyectos personales que estoy desarrollando.
 ```
 index.html                          Página principal
 styles/style.css                    Estilos base (el resto del diseño usa clases de Tailwind en index.html)
-js/main.js                          Menú hamburguesa y modal de certificados
+js/main.js                          Menú hamburguesa, modal de certificados y barra de progreso
+js/gravity.js                       Fondo animado de partículas con canvas
+tailwind.config.js                  Configuración de Tailwind
 images/                             Logos, foto de perfil, capturas de los proyectos y favicon
 cursos/                             Imágenes de los certificados
 CV_Diego_Pereyra_IT_v4_foto.pdf     CV descargable
@@ -60,6 +65,6 @@ CV_Diego_Pereyra_IT_v4_foto.pdf     CV descargable
 
 ## Sobre mí
 
-Soy desarrollador web junior y autodidacta. Actualmente trabajo en T&M Studio, en un equipo de desarrollo, donde pongo en práctica lo que aprendo y sigo sumando experiencia día a día.
+Soy desarrollador web trainee y autodidacta. Actualmente trabajo en T&M Studio, en un equipo de desarrollo, donde pongo en práctica lo que aprendo y sigo sumando experiencia día a día.
 
 Trabajo con HTML, CSS, JavaScript, Tailwind, React, Node.js, Git y bases de datos relacionales y no relacionales, y aprendo con cursos en YouTube y LinkedIn Learning. Vengo de trabajar en depósito, producción y control de procesos, donde aprendí a ser ordenado, a revisar el trabajo antes de darlo por terminado y a buscar la causa de los problemas.
