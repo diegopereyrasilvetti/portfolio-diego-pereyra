@@ -1,13 +1,11 @@
-// Efecto de gravedad en el fondo: una malla de puntos es atraída por el cursor
-// y vuelve a su sitio con un resorte. Canvas 2D sin dependencias.
+// Fondo de partículas conectadas: los puntos flotan despacio, se unen con líneas
+// cuando están cerca y son atraídos por el cursor. Canvas 2D sin dependencias.
 (function () {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    var SPACING = 40;
-    var RADIUS = 140; // alcance de la atracción
-    var PULL = 700; // fuerza de la gravedad
-    var SPRING = 0.045;
-    var DAMPING = 0.86;
+    var RADIUS = 160; // alcance de la atracción del cursor
+    var PULL = 0.6; // fuerza de la atracción
+    var LINK = 110; // distancia máxima para unir dos puntos
 
     var canvas = document.createElement("canvas");
     canvas.setAttribute("aria-hidden", "true");
@@ -15,9 +13,9 @@
     document.body.appendChild(canvas);
     var ctx = canvas.getContext("2d");
 
-    var dots = [];
+    var pts = [];
     var w = 0, h = 0, dpr = 1;
-    var mouse = { x: -9999, y: -9999, active: false };
+    var mouse = { x: -9999, y: -9999 };
     var raf = 0;
 
     function resize() {
@@ -27,64 +25,80 @@
         canvas.width = w * dpr;
         canvas.height = h * dpr;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        dots = [];
-        for (var y = SPACING / 2; y < h; y += SPACING) {
-            for (var x = SPACING / 2; x < w; x += SPACING) {
-                dots.push({ hx: x, hy: y, x: x, y: y, vx: 0, vy: 0 });
-            }
+        var count = Math.min(90, Math.floor(w / 14));
+        pts = [];
+        for (var i = 0; i < count; i++) {
+            pts.push({
+                x: Math.random() * w,
+                y: Math.random() * h,
+                vx: (Math.random() - 0.5) * 0.25,
+                vy: (Math.random() - 0.5) * 0.25
+            });
         }
+        draw();
         start();
     }
 
-    function step() {
+    function draw() {
         ctx.clearRect(0, 0, w, h);
-        var moving = false;
-        for (var i = 0; i < dots.length; i++) {
-            var d = dots[i];
-            if (mouse.active) {
-                var dx = mouse.x - d.x;
-                var dy = mouse.y - d.y;
-                var dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist < RADIUS && dist > 1) {
-                    // atracción suavizada: crece al acercarse y se frena en el centro
-                    var f = (PULL * (1 - dist / RADIUS)) / (dist + 40);
-                    d.vx += (dx / dist) * f * 0.1;
-                    d.vy += (dy / dist) * f * 0.1;
-                }
+        var i, j, p, a, b, dx, dy, d;
+
+        for (i = 0; i < pts.length; i++) {
+            p = pts[i];
+            dx = mouse.x - p.x;
+            dy = mouse.y - p.y;
+            d = Math.sqrt(dx * dx + dy * dy);
+            if (d < RADIUS && d > 1) {
+                p.x += (dx / d) * PULL;
+                p.y += (dy / d) * PULL;
             }
-            d.vx += (d.hx - d.x) * SPRING;
-            d.vy += (d.hy - d.y) * SPRING;
-            d.vx *= DAMPING;
-            d.vy *= DAMPING;
-            d.x += d.vx;
-            d.y += d.vy;
+            if (!reduce) {
+                p.x += p.vx;
+                p.y += p.vy;
+            }
+            if (p.x < 0 || p.x > w) p.vx *= -1;
+            if (p.y < 0 || p.y > h) p.vy *= -1;
 
-            var off = Math.abs(d.x - d.hx) + Math.abs(d.y - d.hy);
-            if (off > 0.05 || Math.abs(d.vx) + Math.abs(d.vy) > 0.05) moving = true;
-
-            // más brillo y tamaño cuanto más desplazado está el punto
-            var t = Math.min(off / 30, 1);
-            ctx.fillStyle = "rgba(" + (90 + 60 * t) + "," + (120 + 60 * t) + ",255," + (0.045 + 0.2 * t) + ")";
+            ctx.fillStyle = "rgba(140,168,255,0.55)";
             ctx.beginPath();
-            ctx.arc(d.x, d.y, 0.8 + 0.5 * t, 0, 6.2832);
+            ctx.arc(p.x, p.y, 1.4, 0, 6.2832);
             ctx.fill();
         }
-        raf = mouse.active || moving ? requestAnimationFrame(step) : 0;
+
+        for (i = 0; i < pts.length; i++) {
+            for (j = i + 1; j < pts.length; j++) {
+                a = pts[i];
+                b = pts[j];
+                d = Math.sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
+                if (d < LINK) {
+                    ctx.strokeStyle = "rgba(120,150,255," + (0.16 * (1 - d / LINK)) + ")";
+                    ctx.beginPath();
+                    ctx.moveTo(a.x, a.y);
+                    ctx.lineTo(b.x, b.y);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+    function loop() {
+        draw();
+        raf = reduce || document.hidden ? 0 : requestAnimationFrame(loop);
     }
 
     function start() {
-        if (!raf && !document.hidden) raf = requestAnimationFrame(step);
+        if (!raf && !reduce && !document.hidden) raf = requestAnimationFrame(loop);
     }
 
     window.addEventListener("pointermove", function (e) {
         mouse.x = e.clientX;
         mouse.y = e.clientY;
-        mouse.active = true;
-        start();
     }, { passive: true });
-    document.addEventListener("pointerleave", function () { mouse.active = false; });
+    document.addEventListener("pointerleave", function () {
+        mouse.x = mouse.y = -9999;
+    });
     window.addEventListener("pointerup", function (e) {
-        if (e.pointerType === "touch") mouse.active = false;
+        if (e.pointerType === "touch") mouse.x = mouse.y = -9999;
     });
     window.addEventListener("resize", resize);
     document.addEventListener("visibilitychange", function () {
