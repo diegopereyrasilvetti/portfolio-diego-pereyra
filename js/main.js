@@ -71,3 +71,35 @@ function updateProgress() {
 window.addEventListener("scroll", updateProgress, { passive: true });
 window.addEventListener("resize", updateProgress);
 updateProgress();
+
+const siteHeader = document.querySelector("body > header");
+
+function updateHeader() {
+    siteHeader.classList.toggle("scrolled", window.scrollY > 20);
+}
+
+window.addEventListener("scroll", updateHeader, { passive: true });
+updateHeader();
+
+const navLinks = Array.from(menuList.querySelectorAll("a"));
+const navTargets = navLinks.map(function (a) {
+    return document.getElementById(a.getAttribute("href").slice(1));
+});
+
+function updateActiveLink() {
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    let current = -1;
+    navTargets.forEach(function (el, i) {
+        if (el && el.getBoundingClientRect().top <= 140) current = i;
+    });
+    if (atBottom) current = navTargets.length - 1;
+    navLinks.forEach(function (a, i) {
+        a.classList.toggle("active", i === current);
+        if (i === current) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+    });
+}
+
+window.addEventListener("scroll", updateActiveLink, { passive: true });
+window.addEventListener("resize", updateActiveLink);
+updateActiveLink();
