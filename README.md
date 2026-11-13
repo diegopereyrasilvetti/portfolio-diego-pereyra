@@ -31,7 +31,7 @@ Son proyectos personales que estoy desarrollando.
 
 - HTML5
 - CSS3
-- JavaScript (menú hamburguesa, ventana modal de certificados, barra de progreso y fondo animado en canvas)
+- JavaScript (menú hamburguesa, ventana modal de certificados, barra de progreso, header animado, sección activa del menú y fondo animado en canvas)
 - Tailwind CSS (cargado desde CDN)
 - Git y GitHub
 - Formspree (envío del formulario de contacto)
@@ -45,6 +45,9 @@ Son proyectos personales que estoy desarrollando.
 - Descarga de CV y botón para volver arriba en el footer
 - Fondo animado de partículas conectadas que reaccionan al cursor (canvas, sin librerías). Se desactiva el movimiento si el sistema pide reducir animaciones y se pausa cuando la pestaña no está visible
 - Barra de progreso de lectura arriba de la página, que avanza a medida que se hace scroll
+- Header fijo: arriba de todo se ve normal y, al hacer scroll, se encoge por los laterales como una píldora flotante con contorno sutil y fondo translúcido con desenfoque
+- Menú que subraya la sección en la que estás mientras hacés scroll
+- Animación de entrada del header: el título aparece con un fade suave y el subtítulo se despliega después
 - Foto de perfil circular
 - Favicon propio
 - Nueve certificados visibles en una ventana modal
@@ -55,7 +58,7 @@ Son proyectos personales que estoy desarrollando.
 ```
 index.html                          Página principal
 styles/style.css                    Estilos base (el resto del diseño usa clases de Tailwind en index.html)
-js/main.js                          Menú hamburguesa, modal de certificados y barra de progreso
+js/main.js                          Menú hamburguesa, modal de certificados, barra de progreso, header al hacer scroll y sección activa del menú
 js/gravity.js                       Fondo animado de partículas con canvas
 tailwind.config.js                  Configuración de Tailwind
 images/                             Logos, foto de perfil, capturas de los proyectos y favicon
