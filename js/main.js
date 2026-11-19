@@ -103,3 +103,20 @@ function updateActiveLink() {
 window.addEventListener("scroll", updateActiveLink, { passive: true });
 window.addEventListener("resize", updateActiveLink);
 updateActiveLink();
+
+// Casos de estudio de los proyectos
+document.querySelectorAll("[data-case]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        const dialog = document.getElementById(btn.dataset.case);
+        if (dialog && typeof dialog.showModal === "function") dialog.showModal();
+    });
+});
+
+document.querySelectorAll(".case-modal").forEach(function (dialog) {
+    dialog.querySelector(".case-close").addEventListener("click", function () {
+        dialog.close();
+    });
+    dialog.addEventListener("click", function (e) {
+        if (e.target === dialog) dialog.close();
+    });
+});
