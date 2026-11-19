@@ -739,3 +739,244 @@ body > header.scrolled::before {
         transition: none;
     }
 }
+
+/* ===== Proyectos: destacado + grilla ===== */
+.projects {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(120, 150, 255, 0.12);
+    border-radius: 16px;
+}
+
+.project-featured {
+    border-color: rgba(140, 168, 255, 0.35);
+    background: linear-gradient(135deg, rgba(40, 70, 200, 0.12), rgba(255, 255, 255, 0.02));
+}
+
+@media screen and (min-width: 1100px) {
+    .project-featured {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        align-items: center;
+        gap: 28px;
+        padding: 24px;
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.projects-grid .chips {
+    margin-top: auto;
+}
+
+.featured-badge {
+    align-self: flex-start;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding: 1px 10px;
+    border-radius: 20px;
+    color: #050608;
+    background-color: rgb(140, 168, 255);
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chip {
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 2px 8px;
+    white-space: nowrap;
+    border-radius: 12px;
+    border: 1px solid rgba(90, 120, 240, 0.4);
+    background-color: rgba(40, 70, 200, 0.15);
+}
+
+.project-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.project-facts div {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0.85;
+    border: 1px solid rgba(120, 150, 255, 0.14);
+    border-radius: 10px;
+}
+
+.project-facts b {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgb(140, 168, 255);
+}
+
+@media screen and (max-width: 699px) {
+    .project-facts {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Botón "Leer el caso" */
+.case-btn {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    gap: 8px;
+    font-size: 16px;
+    border-color: rgba(140, 168, 255, 0.6);
+    background-color: rgba(140, 168, 255, 0.12);
+}
+
+.case-btn:hover {
+    background-color: rgba(140, 168, 255, 0.25);
+}
+
+/* ===== Ventana del caso de estudio ===== */
+.case-modal {
+    width: min(760px, 94vw);
+    max-height: 90vh;
+    padding: 0;
+    margin: auto;
+    color: aliceblue;
+    background-color: #0b0d14;
+    border: 1px solid rgba(120, 150, 255, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.case-modal[open] {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.case-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(120, 150, 255, 0.12);
+}
+
+.case-head h3 {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: rgb(140, 168, 255);
+}
+
+.case-body {
+    flex: auto;
+    min-height: 0;
+    overflow: auto;
+    padding: 4px 22px 22px;
+}
+
+.case-body p {
+    margin: 0;
+    padding: 0;
+    opacity: 0.85;
+}
+
+.case-body .case-stack {
+    margin-top: 12px;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.case-body h4 {
+    margin: 20px 0 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgb(140, 168, 255);
+}
+
+.case-body ul {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.case-body li {
+    opacity: 0.85;
+}
+
+.case-body strong {
+    color: #fff;
+}
+
+.case-body code {
+    font-size: 0.9em;
+    padding: 1px 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.case-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 599px) {
+    .case-body {
+        padding: 4px 16px 18px;
+    }
+    .case-head h3 {
+        font-size: 18px;
+    }
+}
+
+/* Tamaños de texto de proyectos y casos (la regla global de p usa 24px en pantallas grandes) */
+.project-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.case-body p,
+.case-body li {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.case-body .case-stack {
+    font-size: 13px;
+}

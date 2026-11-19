@@ -11,7 +11,7 @@ https://diegopereyrasilvetti.github.io/portfolio-diego-pereyra/
 ## Secciones
 
 - **Sobre mí:** quién soy, dónde trabajo hoy y mi recorrido, con botón para descargar mi CV.
-- **Proyectos:** mis proyectos con su demo, su código en GitHub y las tecnologías usadas.
+- **Proyectos:** un proyecto destacado (Gestión de stock) y los demás en una grilla. Cada uno tiene su demo, su código en GitHub, las tecnologías usadas y un botón "Leer el caso" que abre una ventana con el problema, qué hace, las decisiones técnicas y las tecnologías.
 - **Certificaciones:** cursos de LinkedIn Learning completados: HTML avanzado, CSS avanzado, JavaScript esencial, Domina React, GitHub para desarrolladores, Visual Studio Code 2022 esencial, MySQL: Instalación y configuración, Node.js esencial y Claude: el asistente de IA para optimizar tu trabajo. Al hacer clic en cada uno se abre una ventana modal con el certificado.
 - **Tecnologías:** HTML, CSS, JavaScript, Tailwind CSS, React, Node.js y Git.
 - **Herramientas:** GitHub, Visual Studio Code, Jira y Vercel.
@@ -23,9 +23,9 @@ Son proyectos personales que estoy desarrollando.
 
 | Proyecto | Descripción | Tecnologías | Demo | Código |
 |---|---|---|---|---|
-| E-commerce | Tienda online de componentes y periféricos para PC. | HTML, CSS, Tailwind CSS, React | [Ver](https://ecommerce-chi-hazel.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/E-commerce) |
+| E-commerce | Tienda online de hardware de PC con buscador, carrito, cuentas de usuario y API propia. | React, Node.js, Express, Supabase, Tailwind CSS | [Ver](https://ecommerce-chi-hazel.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/E-commerce) |
 | Sitio web de hotel | Sitio de un hotel en Bariloche con las habitaciones en ventanas modales y mapa de ubicación. | HTML, Tailwind CSS, JavaScript | [Ver](https://hotelwebsite-vert.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/Hotel-Website) |
-| Gestión de stock | Sitio para controlar el stock de un emprendimiento. | HTML, CSS, Tailwind CSS, JavaScript, React | [Ver](https://inventory-management-sigma-henna.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/inventory-management) |
+| Gestión de stock | Aplicación para organizar el stock de una empresa pequeña: inventario, ventas, gastos y balances, con alertas. | React, Node.js, Express, PostgreSQL, Supabase, Tailwind CSS | [Ver](https://inventory-management-sigma-henna.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/inventory-management) |
 
 ## Tecnologías utilizadas
 
@@ -50,6 +50,7 @@ Son proyectos personales que estoy desarrollando.
 - Animación de entrada del header: el título aparece con un fade suave y el subtítulo se despliega después
 - Foto de perfil circular
 - Favicon propio
+- Casos de estudio de cada proyecto en una ventana modal ("Leer el caso")
 - Nueve certificados visibles en una ventana modal
 - Formulario de contacto funcional, sin backend propio
 
@@ -58,7 +59,7 @@ Son proyectos personales que estoy desarrollando.
 ```
 index.html                          Página principal
 styles/style.css                    Estilos base (el resto del diseño usa clases de Tailwind en index.html)
-js/main.js                          Menú hamburguesa, modal de certificados, barra de progreso, header al hacer scroll y sección activa del menú
+js/main.js                          Menú hamburguesa, modales de certificados y casos de estudio, barra de progreso, header al hacer scroll y sección activa del menú
 js/gravity.js                       Fondo animado de partículas con canvas
 tailwind.config.js                  Configuración de Tailwind
 images/                             Logos, foto de perfil, capturas de los proyectos y favicon

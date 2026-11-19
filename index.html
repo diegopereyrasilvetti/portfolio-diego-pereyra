@@ -82,45 +82,147 @@
         </div>
         <section class="min-[600px]:m-[100px]">
             <h2 id="proyectos" class="font-bold">Proyectos</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(260px,340px))] justify-center gap-6 my-5">
-                <article class="project-card flex flex-col gap-3.5 p-5 bg-[rgba(255,255,255,0.03)] border border-[rgba(120,150,255,0.12)] rounded-2xl">
-                    <div class="flex flex-col gap-2.5 flex-1">
-                        <img class="w-full aspect-video object-cover rounded-[10px]" src="images/ecommerce-portada.png" alt="Captura de la página de inicio del E-commerce Kodex">
-                        <h3 class="text-[24px] font-extrabold text-[rgb(140,168,255)]">E-commerce</h3>
-                        <p>Tienda online de componentes y periféricos para PC.</p>
-                        <ul class="flex flex-wrap gap-1.5 list-none mt-auto"><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">HTML</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">Tailwind CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">React</li></ul>
-                    </div>
-                    <div class="flex gap-2.5">
-                        <a class="btn" href="https://ecommerce-chi-hazel.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
-                        <a class="btn" href="https://github.com/diegopereyrasilvetti/E-commerce" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+            <div class="projects">
+                <article class="project-card project-featured">
+                    <img class="w-full aspect-video object-cover rounded-[10px]" src="images/gestion-para-card.png" alt="Captura de la página de inicio de Gestion, sitio para controlar el stock">
+                    <div class="flex flex-col gap-3">
+                        <span class="featured-badge">Proyecto destacado</span>
+                        <h3 class="text-[26px] font-extrabold leading-[1.2] text-[rgb(140,168,255)]">Gestión de stock</h3>
+                        <p>Aplicación web para que una empresa pequeña organice su stock: inventario, productos, proveedores, ventas, gastos y balances, con alertas cuando algo se está agotando.</p>
+                        <ul class="chips"><li class="chip">React</li><li class="chip">Node.js</li><li class="chip">Express</li><li class="chip">PostgreSQL</li><li class="chip">Supabase</li><li class="chip">Tailwind CSS</li></ul>
+                        <div class="project-facts">
+                            <div><b>Problema</b>Stock en planillas que se desactualizan</div>
+                            <div><b>Solución</b>Panel con alertas, ventas y balances</div>
+                            <div><b>Seguridad</b>Roles y permisos en la base de datos</div>
+                        </div>
+                        <button type="button" class="case-btn" data-case="case-stock"><i class="fa-solid fa-book-open"></i>Leer el caso</button>
+                        <div class="flex gap-2.5">
+                            <a class="btn" href="https://inventory-management-sigma-henna.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
+                            <a class="btn" href="https://github.com/diegopereyrasilvetti/inventory-management" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+                        </div>
                     </div>
                 </article>
-                <article class="project-card flex flex-col gap-3.5 p-5 bg-[rgba(255,255,255,0.03)] border border-[rgba(120,150,255,0.12)] rounded-2xl">
-                    <div class="flex flex-col gap-2.5 flex-1">
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img class="w-full aspect-video object-cover rounded-[10px]" src="images/ecommerce-portada.png" alt="Captura de la página de inicio del E-commerce Kodex">
+                        <h3 class="text-[24px] font-extrabold text-[rgb(140,168,255)]">E-commerce</h3>
+                        <p>Tienda online de hardware de PC con buscador, carrito, cuentas de usuario y una API propia.</p>
+                        <ul class="chips"><li class="chip">React</li><li class="chip">Node.js</li><li class="chip">Express</li><li class="chip">Supabase</li><li class="chip">Tailwind CSS</li></ul>
+                        <button type="button" class="case-btn" data-case="case-ecommerce"><i class="fa-solid fa-book-open"></i>Leer el caso</button>
+                        <div class="flex gap-2.5">
+                            <a class="btn" href="https://ecommerce-chi-hazel.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
+                            <a class="btn" href="https://github.com/diegopereyrasilvetti/E-commerce" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
                         <img class="w-full aspect-video object-cover rounded-[10px]" src="./images/hotel para card 2.png" alt="Captura de la página de inicio del sitio web del Hotel Bariloche">
                         <h3 class="text-[24px] font-extrabold text-[rgb(140,168,255)]">Sitio web de hotel</h3>
                         <p>Sitio de un hotel en Bariloche con las habitaciones en ventanas modales y mapa de ubicación.</p>
-                        <ul class="flex flex-wrap gap-1.5 list-none mt-auto"><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">HTML</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">Tailwind CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">JavaScript</li></ul>
-                    </div>
-                    <div class="flex gap-2.5">
-                        <a class="btn" href="https://hotelwebsite-vert.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
-                        <a class="btn" href="https://github.com/diegopereyrasilvetti/Hotel-Website" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
-                    </div>
-                </article>
-                <article class="project-card flex flex-col gap-3.5 p-5 bg-[rgba(255,255,255,0.03)] border border-[rgba(120,150,255,0.12)] rounded-2xl">
-                    <div class="flex flex-col gap-2.5 flex-1">
-                        <img class="w-full aspect-video object-cover rounded-[10px]" src="images/gestion-para-card.png" alt="Captura de la página de inicio de Gestion, sitio para controlar el stock">
-                        <h3 class="text-[24px] font-extrabold text-[rgb(140,168,255)]">Gestión de stock</h3>
-                        <p>Sitio para controlar el stock de un emprendimiento.</p>
-                        <ul class="flex flex-wrap gap-1.5 list-none mt-auto"><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">Tailwind CSS</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">JavaScript</li><li class="text-[12px] leading-[1.4] px-2 py-0.5 whitespace-nowrap rounded-xl border border-[rgba(90,120,240,0.4)] bg-[rgba(40,70,200,0.15)]">React</li></ul>
-                    </div>
-                    <div class="flex gap-2.5">
-                        <a class="btn" href="https://inventory-management-sigma-henna.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
-                        <a class="btn" href="https://github.com/diegopereyrasilvetti/inventory-management" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
-                    </div>
-                </article>
+                        <ul class="chips"><li class="chip">HTML</li><li class="chip">Tailwind CSS</li><li class="chip">JavaScript</li></ul>
+                        <button type="button" class="case-btn" data-case="case-hotel"><i class="fa-solid fa-book-open"></i>Leer el caso</button>
+                        <div class="flex gap-2.5">
+                            <a class="btn" href="https://hotelwebsite-vert.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
+                            <a class="btn" href="https://github.com/diegopereyrasilvetti/Hotel-Website" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
+
+        <dialog class="case-modal" id="case-stock" aria-labelledby="case-stock-title">
+            <div class="case-head">
+                <h3 id="case-stock-title">Gestión de stock</h3>
+                <button type="button" class="cert-modal-close case-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="case-body">
+                <p class="case-stack">React · Node.js · Express · PostgreSQL · Supabase · Tailwind CSS</p>
+                <h4>El problema</h4>
+                <p>Una empresa chica necesita saber qué tiene, qué vendió y cuándo reponer. Cuando eso vive en planillas sueltas, los datos se desactualizan y los faltantes se descubren tarde. Es un problema que conozco de mi trabajo en depósito.</p>
+                <h4>Qué hace</h4>
+                <ul>
+                    <li>Inventario, catálogo de productos, proveedores, ventas, gastos y balances en un solo panel.</li>
+                    <li>Alertas cuando un producto queda por debajo de su mínimo o se agota.</li>
+                    <li>Acceso por invitación: el administrador crea las cuentas y cada una tiene un rol (administrador o usuario).</li>
+                </ul>
+                <h4>Decisiones técnicas</h4>
+                <ul>
+                    <li><strong>Operaciones "todo o nada":</strong> vender, ajustar stock o eliminar una venta se ejecuta completo o no se ejecuta, y cada cambio queda en un historial de movimientos.</li>
+                    <li><strong>El servidor calcula los precios:</strong> el total de una venta sale de los datos de la base, nunca del navegador.</li>
+                    <li><strong>Seguridad en la base de datos:</strong> PostgreSQL con seguridad por fila (RLS) decide quién puede hacer qué, y la clave secreta de Supabase solo vive en el servidor.</li>
+                    <li><strong>Reglas de negocio protegidas:</strong> nadie puede quitarse a sí mismo el rol de administrador y la empresa nunca se queda sin un administrador activo.</li>
+                </ul>
+                <h4>Tecnologías</h4>
+                <p>React 19, React Router, Vite y Tailwind CSS 4 en la web; Node.js con Express 5, zod y helmet en la API; Supabase Auth y PostgreSQL para cuentas y datos; publicado en Vercel.</p>
+                <div class="case-links">
+                    <a class="btn" href="https://inventory-management-sigma-henna.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
+                    <a class="btn" href="https://github.com/diegopereyrasilvetti/inventory-management" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog class="case-modal" id="case-ecommerce" aria-labelledby="case-ecommerce-title">
+            <div class="case-head">
+                <h3 id="case-ecommerce-title">E-commerce · Kodex Tech Store</h3>
+                <button type="button" class="cert-modal-close case-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="case-body">
+                <p class="case-stack">React · Node.js · Express · Supabase · PostgreSQL · Tailwind CSS</p>
+                <h4>El objetivo</h4>
+                <p>Construir una tienda de hardware completa, de punta a punta: catálogo, buscador, carrito, cuentas de usuario y una API propia. Es un proyecto de portfolio, así que no realiza ventas reales.</p>
+                <h4>Qué hace</h4>
+                <ul>
+                    <li>10 categorías con orden por precio y una página por producto con descuento por transferencia y cuotas.</li>
+                    <li>Buscador que sugiere productos mientras se escribe, sin importar tildes ni mayúsculas.</li>
+                    <li>Carrito que se mantiene al recargar la página.</li>
+                    <li>Calculadora de cuello de botella entre procesador y placa de video.</li>
+                    <li>Cuentas con confirmación por email, recuperación de contraseña y direcciones de envío guardadas.</li>
+                </ul>
+                <h4>Decisiones técnicas</h4>
+                <ul>
+                    <li><strong>API propia:</strong> Node.js y Express con validación de datos (zod), cabeceras de seguridad (helmet), CORS y límite de solicitudes.</li>
+                    <li><strong>Privacidad por usuario:</strong> con seguridad por fila (RLS), cada persona solo puede ver y modificar sus propios datos.</li>
+                    <li><strong>Pruebas automáticas:</strong> 185 pruebas (43 del frontend y 142 del servidor, con ~99 % de cobertura en el servidor) que corren en GitHub Actions en cada push.</li>
+                    <li><strong>Responsive y accesible:</strong> revisado en 9 anchos de pantalla, de 320 a 1024 px, navegable con teclado y con respeto a "reducir animaciones".</li>
+                </ul>
+                <h4>Tecnologías</h4>
+                <p>React 19, React Router 7, Vite y Tailwind CSS 4; Node.js con Express 5 y zod; Supabase Auth y PostgreSQL; Vitest y Supertest para las pruebas; GitHub Actions.</p>
+                <div class="case-links">
+                    <a class="btn" href="https://ecommerce-chi-hazel.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
+                    <a class="btn" href="https://github.com/diegopereyrasilvetti/E-commerce" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog class="case-modal" id="case-hotel" aria-labelledby="case-hotel-title">
+            <div class="case-head">
+                <h3 id="case-hotel-title">Sitio web de hotel</h3>
+                <button type="button" class="cert-modal-close case-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="case-body">
+                <p class="case-stack">HTML · Tailwind CSS · JavaScript</p>
+                <h4>El objetivo</h4>
+                <p>La landing page de un hotel ficticio en Bariloche, hecha para practicar maquetado responsive, accesibilidad e interactividad con JavaScript puro, sin frameworks ni librerías de interfaz.</p>
+                <h4>Qué hace</h4>
+                <ul>
+                    <li>Dos carruseles con reproducción automática que se pausan al pasar el mouse o al usar el teclado.</li>
+                    <li>Ventana modal con la foto de cada habitación.</li>
+                    <li>Formulario de reserva que no deja elegir fechas pasadas ni un check-out anterior al check-in.</li>
+                    <li>Mapa de ubicación y secciones que aparecen al hacer scroll.</li>
+                </ul>
+                <h4>Decisiones técnicas</h4>
+                <ul>
+                    <li><strong>Sin librerías:</strong> los carruseles están hechos a mano con una función reutilizable, en vez de código duplicado.</li>
+                    <li><strong>Elementos nativos:</strong> el modal usa <code>&lt;dialog&gt;</code> y el menú del celular funciona sin JavaScript.</li>
+                    <li><strong>Animaciones accesibles:</strong> la aparición al hacer scroll usa <code>IntersectionObserver</code> y se desactiva con "reducir animaciones".</li>
+                </ul>
+                <h4>Qué mejoraría</h4>
+                <p>Conectar los formularios de contacto y reserva a un backend real, y compilar Tailwind en lugar de cargarlo desde un CDN.</p>
+                <div class="case-links">
+                    <a class="btn" href="https://hotelwebsite-vert.vercel.app/" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i>Ver proyecto</a>
+                    <a class="btn" href="https://github.com/diegopereyrasilvetti/Hotel-Website" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </dialog>
         <section class="min-[600px]:m-[100px]">
             <h2 id="certificaciones" class="font-bold">Certificaciones</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(240px,300px))] justify-center gap-5 my-5 max-[599.01px]:grid-cols-[repeat(2,minmax(0,1fr))] max-[599.01px]:gap-3 max-[599.01px]:mx-2.5">
