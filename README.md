@@ -10,7 +10,7 @@ https://diegopereyrasilvetti.github.io/portfolio-diego-pereyra/
 
 ## Secciones
 
-- **Sobre mí:** quién soy, dónde trabajo hoy y mi recorrido, con botón para descargar mi CV.
+- **Sobre mí:** quién soy y mi recorrido, con un enlace a T&M Studio (la empresa donde trabajo actualmente, con su logo) y botón para descargar mi CV.
 - **Proyectos:** un proyecto destacado (Gestión de stock) y los demás en una grilla. Cada uno tiene su demo, su código en GitHub, las tecnologías usadas y un botón "Leer el caso" que abre una ventana con el problema, qué hace, las decisiones técnicas y las tecnologías.
 - **Certificaciones:** cursos de LinkedIn Learning completados: HTML avanzado, CSS avanzado, JavaScript esencial, Domina React, GitHub para desarrolladores, Visual Studio Code 2022 esencial, MySQL: Instalación y configuración, Node.js esencial y Claude: el asistente de IA para optimizar tu trabajo. Al hacer clic en cada uno se abre una ventana modal con el certificado.
 - **Tecnologías:** HTML, CSS, JavaScript, Tailwind CSS, React, Node.js y Git.
