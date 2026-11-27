@@ -23,16 +23,16 @@ Son proyectos personales que estoy desarrollando.
 
 | Proyecto | Descripción | Tecnologías | Demo | Código |
 |---|---|---|---|---|
-| E-commerce | Tienda online de hardware de PC con buscador, carrito, cuentas de usuario y API propia. | React, Node.js, Express, Supabase, Tailwind CSS | [Ver](https://ecommerce-chi-hazel.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/E-commerce) |
-| Sitio web de hotel | Sitio de un hotel en Bariloche con las habitaciones en ventanas modales y mapa de ubicación. | HTML, Tailwind CSS, JavaScript | [Ver](https://hotelwebsite-vert.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/Hotel-Website) |
-| Gestión de stock | Aplicación para organizar el stock de una empresa pequeña: inventario, ventas, gastos y balances, con alertas. | React, Node.js, Express, PostgreSQL, Supabase, Tailwind CSS | [Ver](https://inventory-management-sigma-henna.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/inventory-management) |
+| E-commerce | Tienda online de hardware de PC con buscador, carrito, cuentas de usuario y API propia. | React, Vite, Node.js, Express, Supabase, PostgreSQL, Tailwind CSS, Zod, Helmet | [Ver](https://ecommerce-chi-hazel.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/E-commerce) |
+| Sitio web de hotel | Sitio de un hotel en Bariloche con página de habitaciones, ventanas modales, formulario de reserva y mapa de ubicación. | React, Vite, Tailwind CSS | [Ver](https://hotelwebsite-vert.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/Hotel-Website) |
+| Gestión de stock | Aplicación para organizar el stock de una empresa pequeña: inventario, productos, proveedores, ventas, gastos y balances, con alertas. | React, Vite, Node.js, Express, Supabase, PostgreSQL, Tailwind CSS, Zod, Helmet | [Ver](https://inventory-management-sigma-henna.vercel.app/) | [GitHub](https://github.com/diegopereyrasilvetti/inventory-management) |
 
 ## Tecnologías utilizadas
 
 - HTML5
 - CSS3
-- JavaScript (menú hamburguesa, ventana modal de certificados, barra de progreso, header animado, sección activa del menú y fondo animado en canvas)
-- Tailwind CSS (cargado desde CDN)
+- JavaScript (menú hamburguesa, ventanas modales de certificados y casos de estudio, barra de progreso, header animado, sección activa del menú y fondo animado en canvas)
+- Tailwind CSS (cargado desde CDN con `@tailwindcss/browser`, sin paso de build)
 - Git y GitHub
 - Formspree (envío del formulario de contacto)
 - Font Awesome y Google Fonts
@@ -61,7 +61,7 @@ index.html                          Página principal
 styles/style.css                    Estilos base (el resto del diseño usa clases de Tailwind en index.html)
 js/main.js                          Menú hamburguesa, modales de certificados y casos de estudio, barra de progreso, header al hacer scroll y sección activa del menú
 js/gravity.js                       Fondo animado de partículas con canvas
-tailwind.config.js                  Configuración de Tailwind
+tailwind.config.js                  Vacío y sin uso: Tailwind por CDN no lo lee
 images/                             Logos, foto de perfil, capturas de los proyectos y favicon
 cursos/                             Imágenes de los certificados
 CV_Diego_Pereyra_IT_v4_foto.pdf     CV descargable
